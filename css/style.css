@@ -351,7 +351,7 @@ a {
 	background: url(../img/header-menu-6.png) 50% 30% no-repeat;
 	background-size: contain;
 }
-.header .bottom-header .active {
+.header .bottom-header .active, .header .bottom-header li:hover {
 	background: #e8a765;
 }
 .header .bottom-header a span:last-child {
