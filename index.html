@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="upper-header">
+			<p>
+				С 9:00 до 22:00 без выходных
+			</p>
+			<ul class="main">
+				<li>
+					<a href="">
+						О компании
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Каталог мебели
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Доставка
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Сотрудничество
+					</a>
+				</li>
+			</ul>
+			<!-- smart - menu -->
+			<a id="nav-toggle" href="#" onclick="sandwich('nav-toggle');sandwichL('nav-toggle'); sidebar('smart-menu');heightbox('menu-bg'); return false" style="right:35px;"><span></span></a>
+			<div id="menu-bg" style="max-height: 0px;" onclick="sidebar('smart-menu');sandwich('nav-toggle');sandwichL('nav-toggle');heightbox('menu-bg'); return false"></div>
+			<ul id="smart-menu" class="smart-menu" style="right: -350px;">
+				<li>
+					<a href="">
+						О компании
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Каталог мебели
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Доставка
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Сотрудничество
+					</a>
+				</li>
+				<li class="separator">
+					<a href="" class="menu1 active">
+						Окна из дерева
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu2">
+						Шаттерсы
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu3">
+						Оконные ставни
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu4">
+						Наличники
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu5">
+						Двери из дерева
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu6">
+						другое...
+					</a>
+				</li>
+			</ul>
+			<!-- end -->
+		</div>
+		<div class="middle-header">
+			<a href="#" class="logo">
+				<span class="img">
+
+				</span>
+				<span class="text">
+					ПАН <br>ВИКНА
+				</span>
+			</a>
+			<a href="#" class="call">
+				<span class="img">
+					
+				</span>
+				<span class="text">
+					ВЫЗВАТЬ ЗАМЕРЩИКА
+					<span>
+						бесплатно по Украине
+					</span>
+				</span>
+			</a>
+			<div class="tel">
+				<div>
+					<p>
+						Киев: 3.8 
+					</p>
+					<a href="tel:+380444998254"> 044 499 82 54</a>
+				</div>
+				<div class="other" onclick="heightbox('hidden');heightbox('trans-bg'); return false">
+					другие намера
+					<span class="arrow"></span>
+					<div id="trans-bg" style="max-height: 0px;"></div>
+					<div id="hidden" class="hidden" style="max-height: 0px;">
+						<a href="tel:+380444998254"> 044 499 82 55</a>
+						<a href="tel:+380444998254"> 044 499 82 56</a>
+						<a href="tel:+380444998254"> 044 499 82 57</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="bottom-header">
+			<ul>
+				<li>
+					<a href="" class="menu1 active">
+						<span class="img">
+							
+						</span>
+						<span>
+							Окна из дерева
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu2">
+						<span class="img">
+							
+						</span>
+						<span>
+							Шаттерсы
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu3">
+						<span class="img">
+							
+						</span>
+						<span>
+							Оконные ставни
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu4">
+						<span class="img">
+							
+						</span>
+						<span>
+							Наличники
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu5">
+						<span class="img">
+							
+						</span>
+						<span>
+							Двери из дерева
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu6">
+						<span class="img">
+							
+						</span>
+						<span>
+							другое...
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="index-video">
+		<video src="img/vid.mp4" width="100%" height="auto" preload="auto"></video>
+		<div class="title">
+			<div class="text">
+				<p>
+					БОЛЕЕ 15 ЛЕТ СОЗДАНИЯ 
+				</p>
+				<p>
+					КАЧЕСТВЕННЫХ ЕВРООКОН  
+				</p>
+				<p>
+					из ДЕРЕВА
+				</p>
+			</div>
+			<div class="but">
+				
+			</div>
+		</div>
+	</section>
+	<section class="inspiration">
+		<div class="wrap">
+			<div class="left">
+				<h2>
+					ОКНА
+				</h2>
+				<p class="head-title">
+					Основное <br>
+					вдохновение
+				</p>
+				<div class="line"></div>
+				<p class="detailed">
+					Мы предлагаем большой выбор пород и расцветок натурального дерева, несущего уют в Ваш дом. Деревянные окна герметичные, хорошо сохраняют тепло и не пропускают лишний шум. 
+					<br><br>
+					Независимо от целей Вы вероятно обнаружите что нужны разные типы окон. Разнообразие форм и конструкций (круглое, треугольное, трапеция, арочное) позволит не ограничивать себя при выборе архитектурного проекта. Чтобы лучше понять, что нужно именно Вам посмотрите типы окон, которые мы предлагаем и оцените преимущества каждого из них.
+				</p>
+				<div class="contacts">
+					<div class="tel">
+						Пишите <br><br>
+						<span>3.8 </span><a href="tel:+380444998254">044 499 82 54</a>
+					</div>
+					<div class="mail">
+						Пишите <br><br>
+						<a href="mailto:yandbox@gmail.com">yandbox@gmail.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<h3>
+					примеры готового дизайна
+				</h3>
+				<div class="items">
+					<a href="" class="item1 item"></a>
+					<a href="" class="item2 item"></a>
+					<a href="" class="item3 item"></a>
+					<a href="" class="item4 item"></a>
+					<a href="" class="item5 item"></a>
+					<a href="" class="item6 item"></a>
+				</div>
+				<a href="" class="but">
+					экспертная помощь в выборе
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="doors">
+		<div class="left">
+			<h3>
+				примеры готового дизайна
+			</h3>
+			<div class="items">
+				<a href="" class="item item1"></a>
+				<a href="" class="item item2"></a>
+				<a href="" class="item item3"></a>
+				<a href="" class="item item4"></a>
+			</div>
+			<div class="contacts">
+				<div class="tel">
+					Пишите <br><br>
+					<span>3.8 </span><a href="tel:+380444998254">044 499 82 54</a>
+				</div>
+				<div class="mail">
+					Пишите <br><br>
+					<a href="mailto:yandbox@gmail.com">yandbox@gmail.com</a>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<h2>
+				ДВЕРИ
+			</h2>
+			<p class="head-title">
+				Красота и <br>
+				надежность
+			</p>
+			<div class="line"></div>
+			<p class="detailed">
+				Двери из натурального дерева не только долговечны, но и привнесут в Ваш интерьер атмосферу благородства и роскоши. При изготовлении нашей продукции мы используем лучшие натуральные материалы: береза, дуб.  Дверь задает стиль всего помещения поэтому мы предлагаем двери также по индивидуальному заказу. Наши специалисты помогут подобрать решение по вашим потребностям и запросам. Специально для Вас мы подберем цельную ламель бруса без использования технологии сращивания по длине (которая разрывает рисунок текстуры древесины), что будет особенно актуальным при использовании прозрачных лаковых покрытий.
+			</p>
+			<a href="" class="but">
+				экспертная помощь в выборе
+			</a>
+		</div>
+	</section>
+	<section class="spring-prices">
+		<div class="left">
+			<div class="wrap">
+				<div class="title">
+					С ВЕСНОЙ <br>
+					ПРИХОДЯТ <br>
+					И ВЕСЕННИЕ <br>
+					ЦЕНЫ
+				</div>
+				<div class="line"></div>
+				<div class="detailed">
+					vel nihil honestatis. Cu splendide laboramus scribentur sit, movet timeam cu has, sed tota qualisque id. Mei id quidam sententiae liberavisse.
+				</div>
+				<a href="" class="but">
+					экспертная помощь в выборе
+				</a>
+			</div>
+		</div>
+		<div class="right">
+			
+		</div>
+	</section>
+	<section class="skills">
+		<div class="wrap">
+			<h3 class="title">
+				Реализовали <br>
+				объекты <br>
+				<span>в Украине</span>
+			</h3>
+			<div class="item1 item">
+				<span>более</span>
+				<span>102</span>
+				<span>окон</span>
+			</div>
+			<div class="item2 item">
+				<span>более</span>
+				<span>25</span>
+				<span>объектов</span>
+			</div>
+			<div class="item3 item">
+				<span>более</span>
+				<span>17</span>
+				<span>лет работы</span>
+			</div>
+		</div>
+	</section>
+	<section class="benefits">
+		<div class="left">
+			<div class="wrap">
+				<h2>
+					Преимущества
+				</h2>
+				<ul>
+					<li>
+						При <span>создании окон</span> наша мануфактура использует неавтоматизированный, 
+						ручной труд 
+					</li>
+					<li>
+						Ваши самые смелые нестандартные задумки станут реальностью благодаря <span>нашим специалистам. </span>
+					</li>
+					<li>
+						<span>10 лет гарантии</span> на все конструкции – мы уверенны в качестве нашей работы и готовы предостоавить гарантии
+					</li>
+					<li>
+						<span>Профессиональный монтаж</span> – установку деревянных окон должны выполнять профессионалы, так как именно от качества установки зависят долговечность, шумоизоляция и влагостойкость. Доверьте это наши специалистам
+					</li>
+					<li>
+						УЗКАЯ СПЕЦИАЛИЗАЦИЯ мы <span>специализируемся именно на дереве</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="wrap">
+				<h3>
+					Собственное <br>
+					производство
+				</h3>
+				<div class="img"></div>
+				<a href="" class="but">
+					экспертная помощь в выборе
+				</a>
+			</div>
+			
+		</div>
+	</section>
+	<section class="manufacture">
+		<div class="wrap">
+			<h2>
+				При создании окон наша мануфактура 
+			</h2>
+			<div class="detailed">
+				<div>
+					Inani eligendi deleniti sea ut, pericula consulatu definitionem et pro, no vel nihil honestatis. Cu splendide laboramus scribentur sit, movet timeam cu has, sed tota qualisque id. Mei id quidam sententiae liberavisse. Vis at atqui corrumpit, mazim tibique ne mel, sea primis possit sapientem ad. Ius simul mucius vocibus eu, ridens senserit indoctum id sed. An ipsum nonumes usu, numquam suscipit oporteat in eam, sit vero albucius oporteat.
+				</div>
+				<div>
+					Lorem ipsum dolor sit amet, novum copiosae eum ei, summo diceret offendit vim an. Dicta iisque signiferumque ad pro, eos in altera veritus, nec ei quod falli gubergren. Vim ne causae pertinacia appellantur, probo quaestio in vis, eum vocent dolorem eu. Ex reque habemus theophrastus ius. Has debet singulis an, alii tacimates deseruisse vim ei, aliquip eruditi petentium vel an. Vim at tollit mucius nemore, nibh nostro 
+				</div>
+				<div>
+					Inani eligendi deleniti sea ut, pericula consulatu definitionem et pro, no vel nihil honestatis. Cu splendide laboramus scribentur sit, movet timeam cu has, sed tota qualisque id. Mei id quidam sententiae liberavisse. Vis at atqui corrumpit, mazim tibique ne mel, sea primis possit sapientem ad. 
+				</div>
+			</div>
+			<a href="" class="but">
+				экспертная помощь в выборе
+			</a>
+		</div>
+	</section>
+	<section class="index-gallery">
+		<div class="wrap">
+			<div class="left">
+				<h2>
+					ГАЛЕРЕЯ <br>
+					<span>ВДОХНОВЕНИЯ</span>
+				</h2>
+				<div class="line"></div>
+			</div>
+			<div class="right">
+				ПАНЬСЬКИ ВИКНА - Иногда вам нужно немного вдохновения для вашего проекта. Смотрите Панські вікна  и двери в действии и вдохновляйтесь завершенными проектами по всей Украине. Ознакомьтесь с нашими фотографиями, видео, тематическими исследованиями и галереями проектов ниже.
+			</div>
+		</div>
+		<div class="gallery-inner">
+			<div class="gallery-line" style="left: 0;">
+				<a href="" class="item item1">
+					<span class="but">
+						экспертная помощь в выборе
+					</span>
+				</a>
+				<a href="" class="item item2">
+					<span class="but">
+						экспертная помощь в выборе
+					</span>
+				</a>
+				<a href="" class="item item3">
+					<span class="but">
+						экспертная помощь в выборе
+					</span>
+				</a>
+				<a href="" class="item item4">
+					<span class="but">
+						экспертная помощь в выборе
+					</span>
+				</a>
+				<a href="" class="item item5">
+					<span class="but">
+						экспертная помощь в выборе
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="left-but"></div>
+		<div class="right-but"></div>
+	</section>
+	<section class="index-news">
+		<div class="wrap">
+			<h2>
+				НОВОСТИ
+			</h2>
+			<div class="items">
+				<a href="" class="item1 item">
+					<span class="img"></span>
+					<span class="title">
+						German Design Award 2018 for Play&Work
+					</span>
+					<span class="date">
+						15.02.2018
+					</span>
+				</a>
+				<a href="" class="item2 item">
+					<span class="img"></span>
+					<span class="title">
+						Nowy Styl Group as a Golden artner of 
+					</span>
+					<span class="date">
+						15.02.2018
+					</span>
+				</a>
+				<a href="" class="item3 item">
+					<span class="img"></span>
+					<span class="title">
+						Tauko and Tapa – awarded Best
+					</span>
+					<span class="date">
+						15.02.2018
+					</span>
+				</a>
+				<a href="" class="item4 item">
+					<span class="img"></span>
+					<span class="title">
+						German Design Award 2018 for Play&Work
+					</span>
+					<span class="date">
+						15.02.2018
+					</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="wrap">
+			<div class="main">
+				<div class="pan">
+					<a href="#" class="logo">
+						<span class="img">
+
+						</span>
+						<span class="text">
+							ПАН <br>ВИКНА
+						</span>
+					</a>
+					<p>
+						Lorem ipsum dolor sit amet, decore partem necessitatibus ex vis, agam elit ut vix. Imperdiet gloriatur cum no. Ut euismod saperet graecis has. Dicat munere concludaturque ad pri, in his utroque maluisset.
+					</p>
+				</div>
+				<div class="categories">
+					<h3>
+						Категории
+					</h3>
+					<ul>
+						<li><a href="">Окна из дерева</a></li>
+						<li><a href="">Шаттерсы</a></li>
+						<li><a href="">Оконные ставни</a></li>
+						<li><a href="">Наличники</a></li>
+						<li><a href="">Другое</a></li>
+					</ul>
+				</div>
+				<div class="contacts">
+					<h3>
+						Перезвоните мне
+					</h3>
+					<a href="tel:+380444998254"><span>3.8 </span> 044 499 82 54</a>
+					<p>
+						Режим работы <br>
+						Call-центр <br>
+						ежедневно с 9:00 до 22:00
+					</p>
+				</div>
+				<div class="info">
+					<h3>
+						Информация
+					</h3> 
+					<div class="wrap">
+						<a href="">Новости</a>
+						<a href="">Производство</a>
+						<a href="">История</a>
+						<a href="">Партнеры</a>
+						<a href="">Сертификаты</a>
+						<a href="">Патенты</a>
+						<a href="">Клиенты</a>
+						<a href="">Отзывы</a>
+						<a href="">Сотрудничество</a>
+						<a href="">Вакансии</a>
+					</div>        
+				</div>
+			</div>
+			<div class="links">
+				<ul>
+					<li>
+						<a href="">
+							instagram
+						</a>
+					</li>
+					<li>
+						<a href="">
+							facebook
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="line"></div>
+			<div class="copy">
+				<div class="copies">
+					© 2001—2018 Panskі vіkna. 
+				</div>
+				<a href="" class="title">
+					Паньскі вікна
+				</a>
+				<div class="made-by">
+					<a href class="design">
+						<span>
+							Designed by <br>
+							<span>Anton Morozov </span>
+						</span>
+						<span class="img">
+
+						</span>
+					</a>
+					<a class="frontend">
+						<span>
+							Front end by <br>
+							<span>Andriy Zubets</span>
+						</span>
+						<span class="img">
+
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
