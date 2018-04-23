@@ -1084,10 +1084,10 @@ a {
 	line-height: 1.5em;
 }
 .index-gallery .gallery-inner {
-	height: 420px;
+	height: 450px;
 	max-width: 1585px;
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 	position: relative;
 	-webkit-transform: translate(0,100px);
 	-ms-transform: translate(0,100px);
@@ -1095,7 +1095,7 @@ a {
 }
 .index-gallery .gallery-inner .gallery-line {
 	width: 500%;
-	height: calc(100% - 60px);
+	height: calc(100% - 100px);
 	position: absolute;
 	-webkit-transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
@@ -1195,6 +1195,7 @@ a {
 	-webkit-transform: rotate(135deg);
 	-ms-transform: rotate(135deg);
 	transform: rotate(135deg);
+	cursor: pointer;
 }
 .index-gallery .right-but {
 	position: absolute;
@@ -1207,6 +1208,7 @@ a {
 	-webkit-transform: rotate(135deg);
 	-ms-transform: rotate(135deg);
 	transform: rotate(135deg);
+	cursor: pointer;
 }
 .index-news .wrap {
 	max-width: 1225px;
