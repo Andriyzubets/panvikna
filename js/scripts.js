@@ -7,6 +7,19 @@ function heightbox(id){
 		document.getElementById(id).style.maxHeight='0px';
 	}
 }
+// scroll
+// let menu = parseInt(window.getComputedStyle(document.querySelector('.upper-header'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.middle-header'), null).height) - parseInt(window.getComputedStyle(document.querySelector('.bottom-header'), null).height);
+let menu = parseInt(document.querySelector('.bottom-header').offsetTop);
+
+console.log(menu)
+let scrollTop = document.body.scrollTop;
+window.addEventListener('scroll', function() {
+	var
+	scroll = window.pageYOffset || document.documentElement.scrollTop;
+	height = scroll > menu ? document.querySelector('.bottom-header').classList.add('fixed') : document.querySelector('.bottom-header').classList.remove('fixed');
+	
+
+});
 // video start
 document.querySelector('.index-video .but').onclick = function() {
 	document.querySelector('.index-video video').play();
