@@ -14,123 +14,132 @@ if(document.querySelector('.bottom-header')) {
 
 	let scrollTop = document.body.scrollTop;
 	window.addEventListener('scroll', function() {
-		var
 		scroll = window.pageYOffset || document.documentElement.scrollTop;
 		height = scroll > menu ? document.querySelector('.bottom-header').classList.add('fixed') : document.querySelector('.bottom-header').classList.remove('fixed');
 	});
 }
+if(document.querySelector('.left-side')) {
+	let sideTop = parseInt(document.querySelector('.left-side').offsetTop) - parseInt(window.getComputedStyle(document.querySelector('.bottom-header'), null).height) - 100;
+	let sideHeight = parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).height);
+	
+	let scrollTop = document.body.scrollTop;
+	window.addEventListener('scroll', function() {
+		scroll = window.pageYOffset || document.documentElement.scrollTop;
+		side = scroll > sideTop ? document.querySelector('.left-side').classList.add('fixed') : document.querySelector('.left-side').classList.remove('fixed');
+	});
+}
 // video start
 if(document.querySelector('.index-video .but')) {
-document.querySelector('.index-video .but').onclick = function() {
-	document.querySelector('.index-video video').play();
-	document.querySelector('.index-video .title').style.opacity='0';
-	document.querySelector('.index-video .title').style.visibility='hidden';
-}
+	document.querySelector('.index-video .but').onclick = function() {
+		document.querySelector('.index-video video').play();
+		document.querySelector('.index-video .title').style.opacity='0';
+		document.querySelector('.index-video .title').style.visibility='hidden';
+	}
 }
 // index - gallery
 if(document.querySelector('.index-gallery .left-but')) {
-let iw = window.getComputedStyle(document.querySelector('.index-gallery .gallery-inner .item'), null).width;
-let ig = document.querySelector('.gallery-line');
-let gi = ig.getElementsByClassName('item');
-let ww = document.querySelector('.index-gallery .item').offsetHeight;
-let q1 = '-' + ww + 'px';
-let q2 = '-' + Math.round(2* ww) + 'px';
-let q3 = '-' + Math.round(3* ww) + 'px';
-let q4 = '-' + Math.round(4* ww) + 'px';
-let q5 = '-' + Math.round(5* ww) + 'px';
-let q6 = '-' + Math.round(6* ww) + 'px';
-let q7 = '-' + Math.round(7* ww) + 'px';
+	let iw = window.getComputedStyle(document.querySelector('.index-gallery .gallery-inner .item'), null).width;
+	let ig = document.querySelector('.gallery-line');
+	let gi = ig.getElementsByClassName('item');
+	let ww = document.querySelector('.index-gallery .item').offsetHeight;
+	let q1 = '-' + ww + 'px';
+	let q2 = '-' + Math.round(2* ww) + 'px';
+	let q3 = '-' + Math.round(3* ww) + 'px';
+	let q4 = '-' + Math.round(4* ww) + 'px';
+	let q5 = '-' + Math.round(5* ww) + 'px';
+	let q6 = '-' + Math.round(6* ww) + 'px';
+	let q7 = '-' + Math.round(7* ww) + 'px';
 
-if (document.body.clientWidth>1024){
-	document.querySelector('.index-gallery .left-but').onclick = function() {
-		if(ig.style.left=='-100%') {
+	if (document.body.clientWidth>1024){
+		document.querySelector('.index-gallery .left-but').onclick = function() {
+			if(ig.style.left=='-100%') {
 
+			}
+			else {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left='-100%';
+			}
 		}
-		else {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left='-100%';
-		}
-	}
-	document.querySelector('.index-gallery .right-but').onclick = function() {
-		if(ig.style.left=='0') {
+		document.querySelector('.index-gallery .right-but').onclick = function() {
+			if(ig.style.left=='0') {
 
+			}
+			else {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left='0';
+			}
 		}
-		else {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left='0';
+	}	
+	if (document.body.clientWidth>300){
+		document.querySelector('.index-gallery .left-but').onclick = function() {
+			if(ig.style.left=='0px') {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q1;
+			}
+			else if(ig.style.left==q1) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q2;
+			}
+			else if(ig.style.left==q2) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q3;
+			}
+			else if(ig.style.left==q3) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q4;
+			}
+			else if(ig.style.left==q4) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q5;
+			}
+			else if(ig.style.left==q5) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q6;
+			}
+			else if(ig.style.left==q6) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q7;
+			}
+			else if(ig.style.left==q7) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left='0px';
+			}
 		}
-	}
-}	
-if (document.body.clientWidth>300){
-	document.querySelector('.index-gallery .left-but').onclick = function() {
-		if(ig.style.left=='0px') {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q1;
+		document.querySelector('.index-gallery .right-but').onclick = function() {
+			if(ig.style.left=='0px') {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q7;
+			}
+			else if(ig.style.left==q7) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q6;
+			}
+			else if(ig.style.left==q6) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q5;
+			}
+			else if(ig.style.left==q5) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q4;
+			}
+			else if(ig.style.left==q4) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q3;
+			}
+			else if(ig.style.left==q3) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q2;
+			}
+			else if(ig.style.left==q2) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q1;
+			}
+			else if(ig.style.left==q1) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left='0px';
+			}
 		}
-		else if(ig.style.left==q1) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q2;
-		}
-		else if(ig.style.left==q2) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q3;
-		}
-		else if(ig.style.left==q3) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q4;
-		}
-		else if(ig.style.left==q4) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q5;
-		}
-		else if(ig.style.left==q5) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q6;
-		}
-		else if(ig.style.left==q6) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q7;
-		}
-		else if(ig.style.left==q7) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left='0px';
-		}
-	}
-	document.querySelector('.index-gallery .right-but').onclick = function() {
-		if(ig.style.left=='0px') {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q7;
-		}
-		else if(ig.style.left==q7) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q6;
-		}
-		else if(ig.style.left==q6) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q5;
-		}
-		else if(ig.style.left==q5) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q4;
-		}
-		else if(ig.style.left==q4) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q3;
-		}
-		else if(ig.style.left==q3) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q2;
-		}
-		else if(ig.style.left==q2) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q1;
-		}
-		else if(ig.style.left==q1) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left='0px';
-		}
-	}
-}	
+	}	
 }
 // sandwich
 function sandwich(id){
@@ -248,86 +257,354 @@ if(document.querySelector('.prod-gallery .modal-img')) {
 }
 // prod more slider
 if(document.querySelector('.prod-more-items')) {
-let iw = window.getComputedStyle(document.querySelector('.prod-more-items .item'), null).width;
-let ig = document.querySelector('.items-wrap');
-let gi = ig.getElementsByClassName('item');
-let ww = document.querySelector('.prod-more-items .item').offsetWidth + 30;
-let q1 = '-' + ww + 'px';
-let q2 = '-' + Math.round(2* ww) + 'px';
-let q3 = '-' + Math.round(3* ww) + 'px';
-let q4 = '-' + Math.round(4* ww) + 'px';
-let q5 = '-' + Math.round(5* ww) + 'px';
-let q6 = '-' + Math.round(6* ww) + 'px';
-let q7 = '-' + Math.round(7* ww) + 'px';
+	let iw = window.getComputedStyle(document.querySelector('.prod-more-items .item'), null).width;
+	let ig = document.querySelector('.items-wrap');
+	let gi = ig.getElementsByClassName('item');
+	let ww = document.querySelector('.prod-more-items .item').offsetWidth + 30;
+	let q1 = '-' + ww + 'px';
+	let q2 = '-' + Math.round(2* ww) + 'px';
+	let q3 = '-' + Math.round(3* ww) + 'px';
+	let q4 = '-' + Math.round(4* ww) + 'px';
+	let q5 = '-' + Math.round(5* ww) + 'px';
+	let q6 = '-' + Math.round(6* ww) + 'px';
+	let q7 = '-' + Math.round(7* ww) + 'px';
 
-if (document.body.clientWidth>300){
-	document.querySelector('.prod-more-items .nav .right').onclick = function() {
-		if(ig.style.left=='0px') {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q1;
+	if (document.body.clientWidth>300){
+		document.querySelector('.prod-more-items .nav .right').onclick = function() {
+			if(ig.style.left=='0px') {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q1;
+			}
+			else if(ig.style.left==q1) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q2;
+			}
+			else if(ig.style.left==q2) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q3;
+			}
+			else if(ig.style.left==q3) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q4;
+			}
+			else if(ig.style.left==q4) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q5;
+			}
+			else if(ig.style.left==q5) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q6;
+			}
+			else if(ig.style.left==q6) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q7;
+			}
+			else if(ig.style.left==q7) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left='0px';
+			}
 		}
-		else if(ig.style.left==q1) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q2;
+		document.querySelector('.prod-more-items .nav .left').onclick = function() {
+			if(ig.style.left=='0px') {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q7;
+			}
+			else if(ig.style.left==q7) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q6;
+			}
+			else if(ig.style.left==q6) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q5;
+			}
+			else if(ig.style.left==q5) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q4;
+			}
+			else if(ig.style.left==q4) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q3;
+			}
+			else if(ig.style.left==q3) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q2;
+			}
+			else if(ig.style.left==q2) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left=q1;
+			}
+			else if(ig.style.left==q1) {
+				ig.style.transition='all .4s ease-in-out';
+				ig.style.left='0px';
+			}
 		}
-		else if(ig.style.left==q2) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q3;
+	}	
+}
+// динамичный фильтр
+if(document.querySelector('.port-nav-filter')) {
+	let controls = document.querySelector('.port-nav-filter').getElementsByTagName('a');
+	let items = document.querySelectorAll('.portfolio-gallery .items a');
+	let st = ['i0','i1','i2','i3','i4','i5','i6','i7','i8'];
+	// default but
+	controls[0].onclick = function() {
+		// работа с кнопкой управления
+		for(i=0;i<controls.length;i++) {
+			controls[i].classList.remove('active');
 		}
-		else if(ig.style.left==q3) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q4;
+		controls[0].classList.add('active');
+		// удаление классов грид
+		for(i=0;i<items.length;i++) {
+			for(k=0;k<st.length;k++) {
+				items[i].classList.remove(st[k]);
+				items[i].classList.remove('i');
+			}
 		}
-		else if(ig.style.left==q4) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q5;
-		}
-		else if(ig.style.left==q5) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q6;
-		}
-		else if(ig.style.left==q6) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q7;
-		}
-		else if(ig.style.left==q7) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left='0px';
+		// применение фильтра
+		ct = controls[0].getAttribute('data-filter');
+		for(i=0;i<items.length;i++) {
+			items[i].style.opacity='1';
+			items[i].style.visibility='visible';
 		}
 	}
-	document.querySelector('.prod-more-items .nav .left').onclick = function() {
-		if(ig.style.left=='0px') {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q7;
+	// first but
+
+	controls[1].onclick = function() {
+		// работа с кнопкой управления
+		for(i=0;i<controls.length;i++) {
+			controls[i].classList.remove('active');
 		}
-		else if(ig.style.left==q7) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q6;
+		controls[1].classList.add('active');
+		// удаление классов грид
+		for(i=0;i<items.length;i++) {
+			for(k=0;k<st.length;k++) {
+				items[i].classList.remove(st[k]);
+				items[i].classList.remove('i');
+			}
 		}
-		else if(ig.style.left==q6) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q5;
+		// применение фильтра
+		ct = controls[1].getAttribute('data-filter');
+		for(i=0;i<items.length;i++) {
+			if(items[i].classList.contains(ct)) {
+				items[i].style.opacity='1';
+				items[i].style.visibility='visible';
+				items[i].classList.add('i');
+			}
+			else {
+				items[i].style.visibility='hidden';
+				items[i].style.opacity='0';
+			}
 		}
-		else if(ig.style.left==q5) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q4;
+		// добавление классов грид
+		fl = document.querySelector('.portfolio-gallery .items').getElementsByClassName('i');
+		setTimeout(function() {for(i=0;i<fl.length;i++) {
+			fl[i].classList.add('i'+i);
+		}},500);
+	}
+	controls[2].onclick = function() {
+		// работа с кнопкой управления
+		for(i=0;i<controls.length;i++) {
+			controls[i].classList.remove('active');
 		}
-		else if(ig.style.left==q4) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q3;
+		controls[2].classList.add('active');
+		// удаление классов грид
+		for(i=0;i<items.length;i++) {
+			for(k=0;k<st.length;k++) {
+				items[i].classList.remove(st[k]);
+				items[i].classList.remove('i');
+			}
 		}
-		else if(ig.style.left==q3) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q2;
+		// применение фильтра
+		ct = controls[2].getAttribute('data-filter');
+		for(i=0;i<items.length;i++) {
+			if(items[i].classList.contains(ct)) {
+				items[i].style.opacity='1';
+				items[i].style.visibility='visible';
+				items[i].classList.add('i');
+			}
+			else {
+				items[i].style.opacity='0';
+				items[i].style.visibility='hidden';
+			}
 		}
-		else if(ig.style.left==q2) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left=q1;
+		// добавление классов грид
+		fl = document.querySelector('.portfolio-gallery .items').getElementsByClassName('i');
+		setTimeout(function() {for(i=0;i<fl.length;i++) {
+			fl[i].classList.add('i'+i);
+		}},500);
+	}
+	controls[3].onclick = function() {
+		// работа с кнопкой управления
+		for(i=0;i<controls.length;i++) {
+			controls[i].classList.remove('active');
 		}
-		else if(ig.style.left==q1) {
-			ig.style.transition='all .4s ease-in-out';
-			ig.style.left='0px';
+		controls[3].classList.add('active');
+		// удаление классов грид
+		for(i=0;i<items.length;i++) {
+			for(k=0;k<st.length;k++) {
+				items[i].classList.remove(st[k]);
+				items[i].classList.remove('i');
+			}
+		}
+		// применение фильтра
+		ct = controls[3].getAttribute('data-filter');
+		console.log(ct)
+		for(i=0;i<items.length;i++) {
+			if(items[i].classList.contains(ct)) {
+				items[i].style.opacity='1';
+				items[i].style.visibility='visible';
+				items[i].classList.add('i');
+			}
+			else {
+				items[i].style.opacity='0';
+				items[i].style.visibility='hidden';
+				
+			}
+		}
+		// добавление классов грид
+		fl = document.querySelector('.portfolio-gallery .items').getElementsByClassName('i');
+		setTimeout(function() {for(i=0;i<fl.length;i++) {
+			fl[i].classList.add('i'+i);
+		}},500);
+	}
+}
+
+if (document.querySelector('.catalog-page .numbers')) {
+	let nums = document.querySelectorAll('.numbers li');
+	// активные кнопки
+	nums[0].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[0].classList.add('active');
+		for(i=0;i<nums.length;i++) {
+			if(i>k+4 && i<9) {
+				nums[i].style.display='none';
+				nums[k+4].innerHTML='...';
+			}
 		}
 	}
-}	
+	nums[1].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[1].classList.add('active');
+		
+	}
+	nums[2].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[2].classList.add('active');
+		for(i=0;i<nums.length;i++) {
+			nums[4].innerHTML='5';
+			nums[5].style.display='block';
+			nums[5].innerHTML='...';
+
+			if(i>5 && i<9) {
+				nums[i].style.display='none';
+				// nums[5].innerHTML='...';
+			}
+		}
+	}
+	nums[3].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[3].classList.add('active');
+		for(i=0;i<nums.length;i++) {
+			nums[5].innerHTML='6';
+			nums[6].style.display='block';
+			nums[1].style.display='block';
+			nums[1].innerHTML='2';
+
+
+			nums[6].innerHTML='...';
+
+			if(i>5 && i<9) {
+				nums[i].style.display='none';
+			}
+		}
+	}
+	nums[4].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[4].classList.add('active');
+		for(i=0;i<nums.length;i++) {
+			nums[6].innerHTML='7';
+			nums[7].style.display='block';
+			nums[2].style.display='block';
+
+			nums[7].innerHTML='...';
+			nums[1].innerHTML='...';
+
+			if(i>6 && i<9) {
+				nums[i].style.display='none';
+			}
+		}
+	}
+	nums[5].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[5].classList.add('active');
+		for(i=0;i<nums.length;i++) {
+			nums[7].innerHTML='8';
+			nums[8].style.display='block';
+			nums[8].innerHTML='...';
+			nums[1].innerHTML='...';
+
+			if(i>7 && i<9) {
+				nums[i].style.display='none';
+				nums[2].style.display='none';
+			}
+		}
+	}
+	nums[6].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[6].classList.add('active');
+		for(i=0;i<nums.length;i++) {
+			nums[8].innerHTML='9';
+			nums[9].style.display='block';
+			// nums[9].innerHTML='...';
+			// nums[1].innerHTML='...';
+
+			if(i>8 && i<9) {
+				nums[i].style.display='none';
+				nums[2].style.display='none';
+				nums[3].style.display='none';
+			}
+		}
+	}
+	nums[7].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[7].classList.add('active');
+	}
+	nums[8].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[8].classList.add('active');
+	}
+	nums[9].onclick = function() {
+		for(i=0;i<nums.length;i++) {
+			nums[i].classList.remove('active');
+		}
+		nums[9].classList.add('active');
+	}
+	// цифры
+	for(k=0;k<nums.length;k++) {
+		if(nums[k].classList.contains('active')) {
+			for(i=0;i<nums.length;i++) {
+				if(i>k+4 && i<9) {
+					nums[i].style.display='none';
+					nums[k+4].innerHTML='...';
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="upper-header">
+			<p>
+				С 9:00 до 22:00 без выходных
+			</p>
+			<ul class="main">
+				<li>
+					<a href="">
+						О компании
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Каталог мебели
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Доставка
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Сотрудничество
+					</a>
+				</li>
+			</ul>
+			<!-- smart - menu -->
+			<a id="nav-toggle" href="#" onclick="sandwich('nav-toggle');sandwichL('nav-toggle'); sidebar('smart-menu');heightbox('menu-bg'); return false" style="right:35px;"><span></span></a>
+			<div id="menu-bg" style="max-height: 0px;" onclick="sidebar('smart-menu');sandwich('nav-toggle');sandwichL('nav-toggle');heightbox('menu-bg'); return false"></div>
+			<ul id="smart-menu" class="smart-menu" style="right: -350px;">
+				<li>
+					<a href="">
+						О компании
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Каталог мебели
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Доставка
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Сотрудничество
+					</a>
+				</li>
+				<li class="separator">
+					<a href="" class="menu1 active">
+						Окна из дерева
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu2">
+						Шаттерсы
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu3">
+						Оконные ставни
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu4">
+						Наличники
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu5">
+						Двери из дерева
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu6">
+						другое...
+					</a>
+				</li>
+			</ul>
+			<!-- end -->
+		</div>
+		<div class="middle-header">
+			<a href="#" class="logo">
+				<span class="img">
+
+				</span>
+				<span class="text">
+					ПАН <br>ВИКНА
+				</span>
+			</a>
+			<a href="#" class="call">
+				<span class="img">
+					
+				</span>
+				<span class="text">
+					ВЫЗВАТЬ ЗАМЕРЩИКА
+					<span>
+						бесплатно по Украине
+					</span>
+				</span>
+			</a>
+			<div class="tel">
+				<div>
+					<p>
+						Киев: 3.8 
+					</p>
+					<a href="tel:+380444998254"> 044 499 82 54</a>
+				</div>
+				<div class="other" onclick="heightbox('hidden');heightbox('trans-bg'); return false">
+					другие намера
+					<span class="arrow"></span>
+					<div id="trans-bg" style="max-height: 0px;"></div>
+					<div id="hidden" class="hidden" style="max-height: 0px;">
+						<a href="tel:+380444998254"> 044 499 82 55</a>
+						<a href="tel:+380444998254"> 044 499 82 56</a>
+						<a href="tel:+380444998254"> 044 499 82 57</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="bottom-header">
+			<ul>
+				<li>
+					<a href="#" class="menu1">
+						<span class="img">
+							
+						</span>
+						<span>
+							Окна из дерева
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu2">
+						<span class="img">
+							
+						</span>
+						<span>
+							Шаттерсы
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu3">
+						<span class="img">
+							
+						</span>
+						<span>
+							Оконные ставни
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu4">
+						<span class="img">
+							
+						</span>
+						<span>
+							Наличники
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu5">
+						<span class="img">
+							
+						</span>
+						<span>
+							Двери из дерева
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="" class="menu6">
+						<span class="img">
+							
+						</span>
+						<span>
+							другое...
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="top-pic">
+		<p>ОКНА</p>
+		<img src="img/window-big-white.png" alt="big-white-window">
+	</div>
+
+	<section class="left-side" id="top_nav">
+
+		<a href="#" class="button">ОКНА</a>
+		<a href="#" class="button">История</a>
+		<a href="#" class="button">Партнеры</a>
+		<a href="#" class="button">Сертификаты</a>
+		<a href="#" class="button">Патенты</a>
+		<a href="#" class="button">Клиенты</a>
+		<a href="#" class="button">Отзывы</a>
+
+		<div class="divider"></div>
+
+		<a href="#" class="button bfc but-win">
+			<span>Вызвать</span>
+			<span class="win">замерщика</span>
+			<img src="img/window-white.png" alt="white-window">
+		</a>
+		<a href="#" class="button bfc">
+			<span>Экспертная</span>
+			<span class="win win-2">помощь в выборе</span>
+		</a>
+	</section>
+
+	<main class="catalog-page">
+		<p class="rdy-rsh">Готвые решения</p>
+		<div class="wrap-cont">	
+			<div class="info-box">
+				<div class="el-1">
+					<p>ОКНО</p>
+					<p>1400$</p>
+				</div>
+				<div class="el-2">
+					<p>Двухкамерный или трехкамерный стеклопакет</p>
+					<p>Четырехслойный кленовый брус</p>
+					<p>Внешнее и внутренее энергосбережение</p>
+					<p>Дополнительный отлив на створке</p>
+				</div>
+				<a href="#" class="button">Подробнее</a>
+				<img src="img/window-black.png" alt="window-black">
+			</div>
+			<div class="info-box">
+				<div class="el-1">
+					<p>ОКНО</p>
+					<p>1400$</p>
+				</div>
+				<div class="el-2">
+					<p>Двухкамерный или трехкамерный стеклопакет</p>
+					<p>Четырехслойный кленовый брус</p>
+					<p>Внешнее и внутренее энергосбережение</p>
+					<p>Дополнительный отлив на створке</p>
+				</div>
+				<a href="#" class="button">Подробнее</a>
+				<img src="img/window-black.png" alt="window-black">
+			</div>
+			<div class="info-box">
+				<div class="el-1">
+					<p>ОКНО</p>
+					<p>1400$</p>
+				</div>
+				<div class="el-2">
+					<p>Двухкамерный или трехкамерный стеклопакет</p>
+					<p>Четырехслойный кленовый брус</p>
+					<p>Внешнее и внутренее энергосбережение</p>
+					<p>Дополнительный отлив на створке</p>
+				</div>
+				<a href="#" class="button">Подробнее</a>
+				<img src="img/window-black.png" alt="window-black">
+			</div>
+			<div class="info-box">
+				<div class="el-1">
+					<p>ОКНО</p>
+					<p>1400$</p>
+				</div>
+				<div class="el-2">
+					<p>Двухкамерный или трехкамерный стеклопакет</p>
+					<p>Четырехслойный кленовый брус</p>
+					<p>Внешнее и внутренее энергосбережение</p>
+					<p>Дополнительный отлив на створке</p>
+				</div>
+				<a href="#" class="button">Подробнее</a>
+				<img src="img/window-black.png" alt="window-black">
+			</div>
+			<div class="info-box">
+				<div class="el-1">
+					<p>ОКНО</p>
+					<p>1400$</p>
+				</div>
+				<div class="el-2">
+					<p>Двухкамерный или трехкамерный стеклопакет</p>
+					<p>Четырехслойный кленовый брус</p>
+					<p>Внешнее и внутренее энергосбережение</p>
+					<p>Дополнительный отлив на створке</p>
+				</div>
+				<a href="#" class="button">Подробнее</a>
+				<img src="img/window-black.png" alt="window-black">
+			</div>
+			<div class="info-box">
+				<div class="el-1">
+					<p>ОКНО</p>
+					<p>1400$</p>
+				</div>
+				<div class="el-2">
+					<p>Двухкамерный или трехкамерный стеклопакет</p>
+					<p>Четырехслойный кленовый брус</p>
+					<p>Внешнее и внутренее энергосбережение</p>
+					<p>Дополнительный отлив на створке</p>
+				</div>
+				<a href="#" class="button">Подробнее</a>
+				<img src="img/window-black.png" alt="window-black">
+			</div>
+			<div class="info-box">
+				<div class="el-1">
+					<p>ОКНО</p>
+					<p>1400$</p>
+				</div>
+				<div class="el-2">
+					<p>Двухкамерный или трехкамерный стеклопакет</p>
+					<p>Четырехслойный кленовый брус</p>
+					<p>Внешнее и внутренее энергосбережение</p>
+					<p>Дополнительный отлив на створке</p>
+				</div>
+				<a href="#" class="button">Подробнее</a>
+				<img src="img/window-black.png" alt="window-black">
+			</div>
+			<div class="info-box">
+				<div class="el-1">
+					<p>ОКНО</p>
+					<p>1400$</p>
+				</div>
+				<div class="el-2">
+					<p>Двухкамерный или трехкамерный стеклопакет</p>
+					<p>Четырехслойный кленовый брус</p>
+					<p>Внешнее и внутренее энергосбережение</p>
+					<p>Дополнительный отлив на створке</p>
+				</div>
+				<a href="#" class="button">Подробнее</a>
+				<img src="img/window-black.png" alt="window-black">
+			</div>
+		</div>
+
+		<div class="next-page">
+			<div class="left-arrow">
+				<img src="img/left-arrow.png" alt="Arrow-left">
+			</div>
+
+			<div class="numbers">
+				<ul>
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+				<!-- 	<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+					<li>15</li>
+					<li>16</li>
+					<li>17</li>
+					<li>18</li>
+					<li>19</li>
+					<li>20</li> -->
+				</ul>
+			</div>
+
+			<div class="right-arrow">
+				<img src="img/right-arrow.png" alt="Arrow-right">
+			</div>
+		</div>
+
+		<div class="house-box">
+			<div>
+				<img src="img/House.png" alt="house">
+			</div>
+			<div class="house-text">
+				<p class="zag">Lorem ipsum dolor sit amet consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorem inventore temporibus assumenda explicabo voluptate dolorum nam itaque quasi, at, placeat similique et vel cumque, impedit deserunt. Debitis, repellendus animi.
+				Labore ea molestiae qui iste optio laudantium in ratione sint ullam ab numquam, quisquam molestias natus sequi dolorem veritatis nobis dolore illo totam blanditiis? Pariatur, totam. Hic animi quidem nemo.
+				Animi architecto nostrum culpa iure illo voluptates eius, libero nihil ipsa vero quas et deserunt doloremque nesciunt ipsam dolorem ipsum laudantium labore ducimus autem. Maxime iusto aliquid velit soluta minima.
+				Nemo fuga illum aliquid. Odit, autem est nostrum nisi iusto excepturi omnis eaque dolore facilis atque, eligendi quos, soluta perspiciatis exercitationem nihil? Quam eligendi, ipsa mollitia culpa repellendus aspernatur sapiente.</p>
+			</div>
+		</div>
+
+		<div class="or-box">
+			<div class="bottom-info">
+				<p class="txt-1">Work With Us</p>
+				<p class="txt-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="#" class="jon-but">GET STARTED</a>
+			</div>
+
+			<div class="divider-or">
+				 <div class="line-1"></div>
+				 <div class="or">OR</div>
+				 <div class="line-2"></div>
+			</div>
+
+			<div class="bottom-info">
+				<p class="txt-1">Get In Touch</p>
+				<p class="txt-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="#" class="jon-but">CONTACT US</a>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="wrap">
+			<div class="main">
+				<div class="pan">
+					<a href="#" class="logo">
+						<span class="img">
+
+						</span>
+						<span class="text">
+							ПАН <br>ВИКНА
+						</span>
+					</a>
+					<p>
+						Lorem ipsum dolor sit amet, decore partem necessitatibus ex vis, agam elit ut vix. Imperdiet gloriatur cum no. Ut euismod saperet graecis has. Dicat munere concludaturque ad pri, in his utroque maluisset.
+					</p>
+				</div>
+				<div class="categories">
+					<h3>
+						Категории
+					</h3>
+					<ul>
+						<li><a href="">Окна из дерева</a></li>
+						<li><a href="">Шаттерсы</a></li>
+						<li><a href="">Оконные ставни</a></li>
+						<li><a href="">Наличники</a></li>
+						<li><a href="">Другое</a></li>
+					</ul>
+				</div>
+				<div class="contacts">
+					<h3>
+						Перезвоните мне
+					</h3>
+					<a href="tel:+380444998254"><span>3.8 </span> 044 499 82 54</a>
+					<p>
+						Режим работы <br>
+						Call-центр <br>
+						ежедневно с 9:00 до 22:00
+					</p>
+				</div>
+				<div class="info">
+					<h3>
+						Информация
+					</h3> 
+					<div class="wrap">
+						<a href="">Новости</a>
+						<a href="">Производство</a>
+						<a href="">История</a>
+						<a href="">Партнеры</a>
+						<a href="">Сертификаты</a>
+						<a href="">Патенты</a>
+						<a href="">Клиенты</a>
+						<a href="">Отзывы</a>
+						<a href="">Сотрудничество</a>
+						<a href="">Вакансии</a>
+					</div>        
+				</div>
+			</div>
+			<div class="links">
+				<ul>
+					<li>
+						<a href="">
+							instagram
+						</a>
+					</li>
+					<li>
+						<a href="">
+							facebook
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="line"></div>
+			<div class="copy">
+				<div class="copies">
+					© 2001—2018 Panskі vіkna. 
+				</div>
+				<a href="" class="title">
+					Паньскі вікна
+				</a>
+				<div class="made-by">
+					<a href class="design">
+						<span>
+							Designed by <br>
+							<span>Anton Morozov </span>
+						</span>
+						<span class="img">
+
+						</span>
+					</a>
+					<a class="frontend">
+						<span>
+							Front end by <br>
+							<span>Andriy Zubets</span>
+						</span>
+						<span class="img">
+
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
