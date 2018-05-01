@@ -1733,7 +1733,7 @@ a {
 	-webkit-background-size: contain;
 	background-size: contain;
 }
-/****************************
+***************************
 ********* Card **************
 ***************************
 .product-item {
@@ -2264,9 +2264,9 @@ a {
 	left: calc(50% - 2px);
 	bottom: 0;
 }
-/****************************
+***************************
 ********* Portfolio *********
-****************************/
+***************************
 .product-item .title-image {
 	padding: 150px 0;
 	background: linear-gradient(#00000058, #00000058), url(../img/port-header.jpg) 50% no-repeat;
@@ -2466,9 +2466,9 @@ a.i8 {
 	text-align: center;
 	margin: 100px auto 0;
 }
-/****************************
+***************************
 ********* About *************
-****************************/
+***************************
 .about-page .about-title {
 	padding: 130px 0 85px;
 	background: url(../img/about-title-lay.jpg) 50% no-repeat;
@@ -2673,7 +2673,7 @@ a.i8 {
 }
 /****************************
 ********* Catalog *********
-****************************/
+***************************/
 .left-side {
 	display: flex;
 	flex-flow: column;
