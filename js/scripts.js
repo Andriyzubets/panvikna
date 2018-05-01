@@ -17,6 +17,7 @@ if(document.querySelector('.bottom-header')) {
 		scroll = window.pageYOffset || document.documentElement.scrollTop;
 		height = scroll > menu ? document.querySelector('.bottom-header').classList.add('fixed') : document.querySelector('.bottom-header').classList.remove('fixed');
 	});
+	document.querySelector('.header .emp').style.height=window.getComputedStyle(document.querySelector('.bottom-header'), null).height;
 }
 if(document.querySelector('.left-side')) {
 	let sideTop = parseInt(document.querySelector('.left-side').offsetTop) - parseInt(window.getComputedStyle(document.querySelector('.bottom-header'), null).height) - 100;
@@ -27,6 +28,103 @@ if(document.querySelector('.left-side')) {
 		scroll = window.pageYOffset || document.documentElement.scrollTop;
 		side = scroll > sideTop ? document.querySelector('.left-side').classList.add('fixed') : document.querySelector('.left-side').classList.remove('fixed');
 	});
+}
+// animation
+if(document.querySelector('.body-main-page')) {
+	// проявление элементов при загрузке
+	window.onload = setTimeout(function () {
+		document.querySelector('.upper-header').style.opacity='1';
+
+	},200);
+	window.onload = setTimeout(function () {
+		document.querySelector('.middle-header').style.opacity='1';
+		document.querySelector('.middle-header').style.marginTop='0';
+	},400);
+	window.onload = setTimeout(function () {
+		document.querySelector('.bottom-header').style.opacity='1';
+		document.querySelector('.bottom-header').style.marginTop='0';
+
+	},600);
+
+	window.onload = setTimeout(function () {
+		document.querySelector('.index-video').style.opacity='1';
+		document.querySelector('.index-video').style.marginTop='63px';
+	},1000);
+
+	if (document.body.clientWidth>1025){
+		let h = window.innerHeight;
+		let scrollTop = document.body.scrollTop;
+
+		let fi = document.querySelectorAll('.fade-in-up');
+		let fii = document.querySelectorAll('.fade-in-in');
+
+		window.addEventListener('scroll', function() {
+			scroll = window.pageYOffset || document.documentElement.scrollTop;
+			let sl = parseInt(document.querySelector('.spring-prices .left').offsetTop) - h*.8;
+			let slt = parseInt(document.querySelector('.spring-prices .left').offsetTop) + h*.3;
+			let skls = parseInt(document.querySelector('.skills').offsetTop) - h*.5;
+			let skls1 = parseInt(document.querySelector('.skills').offsetTop) - h*.5 + 4;
+			let parrbg = parseInt(document.querySelector('.parrbg').offsetTop) - h*.5;
+			let pwbg = parseInt(document.querySelector('.pwbg').offsetTop) - h*.9;
+			let pbbg = parseInt(document.querySelector('.pbbg').offsetTop) - h*.5;
+			let galpar = parseInt(document.querySelector('.galpar').offsetTop) - h*.5;
+
+			for(i=0;i<fi.length;i++) {
+				let f =  parseInt(fi[i].offsetTop) - h*.5;
+				fade = scroll > f ? fi[i].classList.remove('fade-in-pass') : fi[i].classList.add('fade-in-pass');
+			}
+			for(i=0;i<fii.length;i++) {
+				fade =  parseInt(fii[i].getBoundingClientRect().top) < h*.5 ? fii[i].classList.remove('fade-in-pass') : fii[i].classList.add('fade-in-pass');
+			}
+			left = scroll > sl && scroll < slt ? document.querySelector('.spring-prices .left').style.transform='translate(0,0)' : document.querySelector('.spring-prices .left').style.transform='translate(-44vw,0)';
+
+			num = scroll > skls && scroll < skls1 ? nums() :  false;
+
+			pu = Math.round(100 - scroll/10)+'%';
+			parrbg = scroll > parrbg ? document.querySelector('.parrbg').style.backgroundPositionY=pu : false;
+
+			pw = Math.round(210 - scroll/10)+'%';
+			pwbg = scroll > pwbg ? document.querySelector('.pwbg').style.transform='translateY('+pw+')' : false;
+
+			pb = Math.round(310 - scroll/10)+'%';
+			pbbg = scroll > pbbg ? document.querySelector('.pbbg').style.transform='translateY('+pb+')' : false;
+
+			gr = Math.round(450 - scroll/10)+'%';
+			pcbg = scroll > galpar ? document.querySelector('.galpar').style.backgroundPositionY=gr : false;
+		});
+		let nums = function() {
+			let sk = document.querySelectorAll('.skills .number');
+			let sk1 = 0;
+			let sk2 = 0;
+			let sk3 = 0;
+
+			n1 = 103;
+			n2 = 26;
+			n3 = 18;
+
+			si = setInterval(function () {
+				sk[0].innerHTML = sk1;	
+				sk1++;	
+				if(sk1 == n1) {
+					clearInterval(si);
+				}
+			}, 20);	
+			si1 = setInterval(function () {
+				sk[1].innerHTML = sk2;	
+				sk2++;	
+				if(sk2 == n2) {
+					clearInterval(si1);
+				}
+			}, 20);	
+			si2 = setInterval(function () {
+				sk[2].innerHTML = sk3;	
+				sk3++;	
+				if(sk3 == n3) {
+					clearInterval(si2);
+				}
+			}, 30);	
+		}
+	}
 }
 // video start
 if(document.querySelector('.index-video .but')) {
