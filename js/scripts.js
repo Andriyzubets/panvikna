@@ -20,26 +20,60 @@ if(document.querySelector('.bottom-header')) {
 	document.querySelector('.header .emp').style.height=window.getComputedStyle(document.querySelector('.bottom-header'), null).height;
 }
 if(document.querySelector('.left-side')) {
-	let sideTop = parseInt(document.querySelector('.left-side').offsetTop) - parseInt(window.getComputedStyle(document.querySelector('.bottom-header'), null).height) - 100;
-	let sideHeight = parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).height);
+	if(document.querySelector('.bottom-header')) {
+		let sideTop = parseInt(document.querySelector('.left-side').offsetTop) - parseInt(window.getComputedStyle(document.querySelector('.bottom-header'), null).height) - 100;
+		let sideBot = parseInt(document.querySelector('.header').offsetTop) + parseInt(window.getComputedStyle(document.querySelector('main'), null).height);
+
+		let scrollTop = document.body.scrollTop;
+		window.addEventListener('scroll', function() {
+			scroll = window.pageYOffset || document.documentElement.scrollTop;
+			side = scroll > sideTop ? document.querySelector('.left-side').classList.add('fixed') : document.querySelector('.left-side').classList.remove('fixed');
+			rath = sideBot - scroll + 'px';
+			endSide = scroll > sideBot ? document.querySelector('.left-side').style.transform='translateY('+ rath +')' : document.querySelector('.left-side').classList.remove('fixed-bot');
+		});
+	} else {
+		let sideTop = parseInt(document.querySelector('.left-side').offsetTop);
+		let sideBot = parseInt(document.querySelector('.header').offsetTop) + parseInt(window.getComputedStyle(document.querySelector('main'), null).height) - 308;
+
+		let scrollTop = document.body.scrollTop;
+		window.addEventListener('scroll', function() {
+			scroll = window.pageYOffset || document.documentElement.scrollTop;
+			side = scroll > sideTop ? document.querySelector('.left-side').classList.add('fixed') : document.querySelector('.left-side').classList.remove('fixed');
+
+			if (document.body.clientWidth>=922){
+				rath = sideBot - scroll + 'px';
+				endSide = scroll > sideBot ? document.querySelector('.left-side').style.transform='translateY('+ rath +')' : document.querySelector('.left-side').style.transform='translateY(0)';
+			}
+		});
+	}
 	
-	let scrollTop = document.body.scrollTop;
-	window.addEventListener('scroll', function() {
-		scroll = window.pageYOffset || document.documentElement.scrollTop;
-		side = scroll > sideTop ? document.querySelector('.left-side').classList.add('fixed') : document.querySelector('.left-side').classList.remove('fixed');
-	});
+	let sideHeight = parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).height);
 }
+
+window.onload = setTimeout(function () {
+	document.querySelector('.upper-header').style.opacity='1';
+
+},200);
+window.onload = setTimeout(function () {
+	document.querySelector('.middle-header').style.opacity='1';
+	document.querySelector('.middle-header').style.marginTop='0';
+},400);
 // animation
+if(document.querySelector('.about-body')) {
+	// проявление элементов при загрузке
+	
+	
+	window.onload = setTimeout(function () {
+		document.querySelector('.bottom-header').style.opacity='1';
+		document.querySelector('.bottom-header').style.marginTop='0';
+
+	},600);
+}
+
 if(document.querySelector('.body-main-page')) {
 	// проявление элементов при загрузке
-	window.onload = setTimeout(function () {
-		document.querySelector('.upper-header').style.opacity='1';
-
-	},200);
-	window.onload = setTimeout(function () {
-		document.querySelector('.middle-header').style.opacity='1';
-		document.querySelector('.middle-header').style.marginTop='0';
-	},400);
+	
+	
 	window.onload = setTimeout(function () {
 		document.querySelector('.bottom-header').style.opacity='1';
 		document.querySelector('.bottom-header').style.marginTop='0';
@@ -248,12 +282,24 @@ function sandwich(id){
 		document.getElementById(id).classList.add('active');
 	}
 }
-function sandwichL(id){
-	right = document.getElementById(id).style.right;
-	if(right=='35px'){
-		document.getElementById(id).style.right='380px';
-	}else{
-		document.getElementById(id).style.right='35px';
+if (document.body.clientWidth>661) { 
+	function sandwichL(id){
+		right = document.getElementById(id).style.right;
+		if(right=='35px'){
+			document.getElementById(id).style.right='380px';
+		}else{
+			document.getElementById(id).style.right='35px';
+		}
+	}
+}
+if (document.body.clientWidth<660) { 
+	function sandwichL(id){
+		right = document.getElementById(id).style.right;
+		if(right=='35px'){
+			document.getElementById(id).style.right='300px';
+		}else{
+			document.getElementById(id).style.right='35px';
+		}
 	}
 }
 // sidebar 
@@ -262,8 +308,10 @@ function sidebar(id){
 
 	if(right=='-350px'){
 		document.getElementById(id).style.right='0';
+		document.getElementById(id).style.transform='translate(0,0)';
 	}else{
 		document.getElementById(id).style.right='-350px';
+		document.getElementById(id).style.transform='translate(20vw,0)';
 	}
 }
 
@@ -704,5 +752,32 @@ if (document.querySelector('.catalog-page .numbers')) {
 				}
 			}
 		}
+	}
+}
+if (document.body.clientWidth<1500){ 
+	let mainArea = document.querySelectorAll('main section');
+	let leftSide = document.querySelector('.left-side');
+	let w = window.innerWidth;
+	let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
+	for(i=0;i<mainArea.length;i++) {
+		mainArea[i].style.maxWidth=calc+'px';
+	}
+}
+if (document.body.clientWidth<1500){ 
+	let mainArea = document.querySelectorAll('main > div');
+	let leftSide = document.querySelector('.left-side');
+	let w = window.innerWidth;
+	let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
+	for(i=0;i<mainArea.length;i++) {
+		mainArea[i].style.maxWidth=calc+'px';
+	}
+}
+if (document.querySelector('.portfolio-body')){ 
+	let mainArea = document.querySelectorAll('main .wrap');
+	let leftSide = document.querySelector('.left-side');
+	let w = window.innerWidth;
+	let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
+	for(i=0;i<mainArea.length;i++) {
+		mainArea[i].style.maxWidth=calc+'px';
 	}
 }
