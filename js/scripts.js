@@ -8,7 +8,7 @@ function heightbox(id){
 	}
 }
 
-// scroll
+// scroll header
 if(document.querySelector('.bottom-header')) {
 	let menu = parseInt(document.querySelector('.bottom-header').offsetTop);
 
@@ -17,8 +17,9 @@ if(document.querySelector('.bottom-header')) {
 		scroll = window.pageYOffset || document.documentElement.scrollTop;
 		height = scroll > menu ? document.querySelector('.bottom-header').classList.add('fixed') : document.querySelector('.bottom-header').classList.remove('fixed');
 	});
-	document.querySelector('.header .emp').style.height=window.getComputedStyle(document.querySelector('.bottom-header'), null).height;
+	setTimeout(function() {document.querySelector('.header .emp').style.height=document.querySelector('.bottom-header').offsetHeight+'px'},600);
 }
+// scroll slider
 if(document.querySelector('.left-side')) {
 	if(document.querySelector('.bottom-header')) {
 		let sideTop = parseInt(document.querySelector('.left-side').offsetTop) - parseInt(window.getComputedStyle(document.querySelector('.bottom-header'), null).height) - 100;
@@ -29,11 +30,11 @@ if(document.querySelector('.left-side')) {
 			scroll = window.pageYOffset || document.documentElement.scrollTop;
 			side = scroll > sideTop ? document.querySelector('.left-side').classList.add('fixed') : document.querySelector('.left-side').classList.remove('fixed');
 			rath = sideBot - scroll + 'px';
-			endSide = scroll > sideBot ? document.querySelector('.left-side').style.transform='translateY('+ rath +')' : document.querySelector('.left-side').classList.remove('fixed-bot');
+			endSide = scroll > sideBot ? document.querySelector('.left-side').style.transform='translateY('+ rath +')' : document.querySelector('.left-side').style.transform='translateY(0)';
 		});
 	} else {
 		let sideTop = parseInt(document.querySelector('.left-side').offsetTop);
-		let sideBot = parseInt(document.querySelector('.header').offsetTop) + parseInt(window.getComputedStyle(document.querySelector('main'), null).height) - 308;
+		let sideBot = parseInt(document.querySelector('.header').offsetHeight) + parseInt(window.getComputedStyle(document.querySelector('main'), null).height) - 308;
 
 		let scrollTop = document.body.scrollTop;
 		window.addEventListener('scroll', function() {
@@ -41,45 +42,41 @@ if(document.querySelector('.left-side')) {
 			side = scroll > sideTop ? document.querySelector('.left-side').classList.add('fixed') : document.querySelector('.left-side').classList.remove('fixed');
 
 			if (document.body.clientWidth>=922){
+				let sideBot = parseInt(document.querySelector('.header').offsetHeight) + parseInt(window.getComputedStyle(document.querySelector('main'), null).height) - 308;
 				rath = sideBot - scroll + 'px';
-				endSide = scroll > sideBot ? document.querySelector('.left-side').style.transform='translateY('+ rath +')' : document.querySelector('.left-side').style.transform='translateY(0)';
+				endSide = scroll > sideBot ? document.querySelector('.left-side').style.transform='translateY('+ rath +')' : document.querySelector('.left-side').style.transform='translateY(0) !important';
 			}
 		});
 	}
 	
 	let sideHeight = parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).height);
 }
-
+// проявление элементов при загрузке
 window.onload = setTimeout(function () {
 	document.querySelector('.upper-header').style.opacity='1';
-
 },200);
 window.onload = setTimeout(function () {
 	document.querySelector('.middle-header').style.opacity='1';
 	document.querySelector('.middle-header').style.marginTop='0';
 },400);
-// animation
+// проявление на О нас
 if(document.querySelector('.about-body')) {
-	// проявление элементов при загрузке
-	
-	
+
 	window.onload = setTimeout(function () {
 		document.querySelector('.bottom-header').style.opacity='1';
 		document.querySelector('.bottom-header').style.marginTop='0';
 
 	},600);
 }
+// animation
 
 if(document.querySelector('.body-main-page')) {
 	// проявление элементов при загрузке
 	
-	
 	window.onload = setTimeout(function () {
 		document.querySelector('.bottom-header').style.opacity='1';
 		document.querySelector('.bottom-header').style.marginTop='0';
-
 	},600);
-
 	window.onload = setTimeout(function () {
 		document.querySelector('.index-video').style.opacity='1';
 		document.querySelector('.index-video').style.marginTop='63px';
@@ -168,7 +165,7 @@ if(document.querySelector('.index-video .but')) {
 		document.querySelector('.index-video .title').style.visibility='hidden';
 	}
 }
-// index - gallery
+// index - gallery slide sides
 if(document.querySelector('.index-gallery .left-but')) {
 	let iw = window.getComputedStyle(document.querySelector('.index-gallery .gallery-inner .item'), null).width;
 	let ig = document.querySelector('.gallery-line');
@@ -314,10 +311,10 @@ function sidebar(id){
 		document.getElementById(id).style.transform='translate(20vw,0)';
 	}
 }
-
 document.querySelector('.smart-menu a').onclick=function(){
 	document.querySelector('.smart-menu').style.right='-350px';
 }
+// item descriptions accordion buttons
 if(document.querySelector('.item-desc .table')) {
 	but = document.querySelector('.item-desc ul').getElementsByTagName('li');
 	// console.log(but[0])
@@ -365,6 +362,7 @@ if(document.querySelector('.item-desc .table')) {
 		tables[0].style.maxHeight='0px';
 	}
 }
+// item gallery modal
 if(document.querySelector('.prod-gallery .modal-img')) {
 	imgs = document.querySelectorAll('.prod-gallery .img');
 	mod = document.querySelector('.prod-gallery .modal-img');
@@ -401,7 +399,7 @@ if(document.querySelector('.prod-gallery .modal-img')) {
 		mbg.style.left='0';
 	}
 }
-// prod more slider
+// prod more slider sides
 if(document.querySelector('.prod-more-items')) {
 	let iw = window.getComputedStyle(document.querySelector('.prod-more-items .item'), null).width;
 	let ig = document.querySelector('.items-wrap');
@@ -503,17 +501,22 @@ if(document.querySelector('.port-nav-filter')) {
 			for(k=0;k<st.length;k++) {
 				items[i].classList.remove(st[k]);
 				items[i].classList.remove('i');
+				items[i].style.opacity='0';
 			}
 		}
 		// применение фильтра
 		ct = controls[0].getAttribute('data-filter');
 		for(i=0;i<items.length;i++) {
-			items[i].style.opacity='1';
-			items[i].style.visibility='visible';
+			items[i].style.display='block';
+			(function(i) {
+				setTimeout(function(){
+					items[i].style.opacity='1';
+					items[i].style.visibility='visible';
+				}, 400);
+			})(i);
 		}
 	}
 	// first but
-
 	controls[1].onclick = function() {
 		// работа с кнопкой управления
 		for(i=0;i<controls.length;i++) {
@@ -525,19 +528,27 @@ if(document.querySelector('.port-nav-filter')) {
 			for(k=0;k<st.length;k++) {
 				items[i].classList.remove(st[k]);
 				items[i].classList.remove('i');
+				items[i].style.display='none';
+				items[i].style.opacity='0';
 			}
 		}
-		// применение фильтра
 		ct = controls[1].getAttribute('data-filter');
 		for(i=0;i<items.length;i++) {
 			if(items[i].classList.contains(ct)) {
-				items[i].style.opacity='1';
-				items[i].style.visibility='visible';
+				(function(i) {
+					setTimeout(function(){
+						items[i].style.opacity='1';
+						items[i].style.visibility='visible';
+					}, 400);
+				})(i);
 				items[i].classList.add('i');
+				items[i].style.display='block';
 			}
 			else {
 				items[i].style.visibility='hidden';
 				items[i].style.opacity='0';
+				items[i].style.display='none';
+
 			}
 		}
 		// добавление классов грид
@@ -557,19 +568,29 @@ if(document.querySelector('.port-nav-filter')) {
 			for(k=0;k<st.length;k++) {
 				items[i].classList.remove(st[k]);
 				items[i].classList.remove('i');
+				items[i].style.display='none';
+				items[i].style.opacity='0';
 			}
 		}
 		// применение фильтра
 		ct = controls[2].getAttribute('data-filter');
 		for(i=0;i<items.length;i++) {
 			if(items[i].classList.contains(ct)) {
-				items[i].style.opacity='1';
-				items[i].style.visibility='visible';
+				(function(i) {
+					setTimeout(function(){
+						items[i].style.opacity='1';
+						items[i].style.visibility='visible';
+					}, 400);
+				})(i);
+				items[i].style.display='block';
+
 				items[i].classList.add('i');
 			}
 			else {
 				items[i].style.opacity='0';
 				items[i].style.visibility='hidden';
+				items[i].style.display='none';
+
 			}
 		}
 		// добавление классов грид
@@ -589,6 +610,8 @@ if(document.querySelector('.port-nav-filter')) {
 			for(k=0;k<st.length;k++) {
 				items[i].classList.remove(st[k]);
 				items[i].classList.remove('i');
+				items[i].style.display='none';
+				items[i].style.opacity='0';
 			}
 		}
 		// применение фильтра
@@ -596,14 +619,19 @@ if(document.querySelector('.port-nav-filter')) {
 		console.log(ct)
 		for(i=0;i<items.length;i++) {
 			if(items[i].classList.contains(ct)) {
-				items[i].style.opacity='1';
-				items[i].style.visibility='visible';
+				(function(i) {
+					setTimeout(function(){
+						items[i].style.opacity='1';
+						items[i].style.visibility='visible';
+					}, 400);
+				})(i);
+				items[i].style.display='block';
 				items[i].classList.add('i');
 			}
 			else {
 				items[i].style.opacity='0';
 				items[i].style.visibility='hidden';
-				
+				items[i].style.display='none';
 			}
 		}
 		// добавление классов грид
@@ -613,171 +641,47 @@ if(document.querySelector('.port-nav-filter')) {
 		}},500);
 	}
 }
-
-if (document.querySelector('.catalog-page .numbers')) {
-	let nums = document.querySelectorAll('.numbers li');
-	// активные кнопки
-	nums[0].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[0].classList.add('active');
-		for(i=0;i<nums.length;i++) {
-			if(i>k+4 && i<9) {
-				nums[i].style.display='none';
-				nums[k+4].innerHTML='...';
-			}
+// Ширина контента в зависимости от бокового меню
+if(document.querySelector('.left-side')) {
+	if (document.body.clientWidth<1500){ 
+		let mainArea = document.querySelectorAll('main section');
+		let leftSide = document.querySelector('.left-side');
+		let w = window.innerWidth;
+		let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
+		for(i=0;i<mainArea.length;i++) {
+			mainArea[i].style.maxWidth=calc+'px';
 		}
 	}
-	nums[1].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[1].classList.add('active');
-		
-	}
-	nums[2].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[2].classList.add('active');
-		for(i=0;i<nums.length;i++) {
-			nums[4].innerHTML='5';
-			nums[5].style.display='block';
-			nums[5].innerHTML='...';
-
-			if(i>5 && i<9) {
-				nums[i].style.display='none';
-				// nums[5].innerHTML='...';
-			}
+	if (document.body.clientWidth<1500){ 
+		let mainArea = document.querySelectorAll('main > div');
+		let leftSide = document.querySelector('.left-side');
+		let w = window.innerWidth;
+		let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
+		for(i=0;i<mainArea.length;i++) {
+			mainArea[i].style.maxWidth=calc+'px';
 		}
 	}
-	nums[3].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[3].classList.add('active');
-		for(i=0;i<nums.length;i++) {
-			nums[5].innerHTML='6';
-			nums[6].style.display='block';
-			nums[1].style.display='block';
-			nums[1].innerHTML='2';
-
-
-			nums[6].innerHTML='...';
-
-			if(i>5 && i<9) {
-				nums[i].style.display='none';
-			}
-		}
-	}
-	nums[4].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[4].classList.add('active');
-		for(i=0;i<nums.length;i++) {
-			nums[6].innerHTML='7';
-			nums[7].style.display='block';
-			nums[2].style.display='block';
-
-			nums[7].innerHTML='...';
-			nums[1].innerHTML='...';
-
-			if(i>6 && i<9) {
-				nums[i].style.display='none';
-			}
-		}
-	}
-	nums[5].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[5].classList.add('active');
-		for(i=0;i<nums.length;i++) {
-			nums[7].innerHTML='8';
-			nums[8].style.display='block';
-			nums[8].innerHTML='...';
-			nums[1].innerHTML='...';
-
-			if(i>7 && i<9) {
-				nums[i].style.display='none';
-				nums[2].style.display='none';
-			}
-		}
-	}
-	nums[6].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[6].classList.add('active');
-		for(i=0;i<nums.length;i++) {
-			nums[8].innerHTML='9';
-			nums[9].style.display='block';
-			// nums[9].innerHTML='...';
-			// nums[1].innerHTML='...';
-
-			if(i>8 && i<9) {
-				nums[i].style.display='none';
-				nums[2].style.display='none';
-				nums[3].style.display='none';
-			}
-		}
-	}
-	nums[7].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[7].classList.add('active');
-	}
-	nums[8].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[8].classList.add('active');
-	}
-	nums[9].onclick = function() {
-		for(i=0;i<nums.length;i++) {
-			nums[i].classList.remove('active');
-		}
-		nums[9].classList.add('active');
-	}
-	// цифры
-	for(k=0;k<nums.length;k++) {
-		if(nums[k].classList.contains('active')) {
-			for(i=0;i<nums.length;i++) {
-				if(i>k+4 && i<9) {
-					nums[i].style.display='none';
-					nums[k+4].innerHTML='...';
-				}
-			}
+	if (document.querySelector('.portfolio-body')){ 
+		let mainArea = document.querySelectorAll('main .wrap');
+		let leftSide = document.querySelector('.left-side');
+		let w = window.innerWidth;
+		let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
+		for(i=0;i<mainArea.length;i++) {
+			mainArea[i].style.maxWidth=calc+'px';
 		}
 	}
 }
-if (document.body.clientWidth<1500){ 
-	let mainArea = document.querySelectorAll('main section');
-	let leftSide = document.querySelector('.left-side');
-	let w = window.innerWidth;
-	let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
-	for(i=0;i<mainArea.length;i++) {
-		mainArea[i].style.maxWidth=calc+'px';
-	}
-}
-if (document.body.clientWidth<1500){ 
-	let mainArea = document.querySelectorAll('main > div');
-	let leftSide = document.querySelector('.left-side');
-	let w = window.innerWidth;
-	let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
-	for(i=0;i<mainArea.length;i++) {
-		mainArea[i].style.maxWidth=calc+'px';
-	}
-}
-if (document.querySelector('.portfolio-body')){ 
-	let mainArea = document.querySelectorAll('main .wrap');
-	let leftSide = document.querySelector('.left-side');
-	let w = window.innerWidth;
-	let calc = w - Math.round(parseInt(window.getComputedStyle(document.querySelector('.left-side'), null).width) * 2 + 60);
-	for(i=0;i<mainArea.length;i++) {
-		mainArea[i].style.maxWidth=calc+'px';
+// pinterset галерея
+if(document.querySelector('.portfolio-gallery')) {
+	portItems = document.querySelectorAll('.portfolio-gallery .items a');
+	minIt = 150;
+	maxIt = 350;
+	for(i=0;i<portItems.length;i++) {
+		function randomInteger(min, max) {
+			var rand = min - 0.5 + Math.random() * (max - min + 1)
+			rand = Math.round(rand);
+			return rand;
+		}
+		portItems[i].style.paddingTop=randomInteger(minIt, maxIt)+'px';
 	}
 }
