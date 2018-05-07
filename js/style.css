@@ -2968,7 +2968,7 @@ a {
 	left: 0;
 }
 .item-body .left-side.fixed, .catalog-body .left-side.fixed, .portfolio-body .left-side.fixed {
-	top: 0;
+	top: 0 !important;
 }
 .item-body .left-side {
 	top: 0;
