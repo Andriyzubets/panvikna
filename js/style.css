@@ -2960,7 +2960,7 @@ a {
 	top: 69%;
 }
 .about-body .left-side.left-side-lower.fixed {
-	top: 90px;
+	top: 90px !important;
 }
 .left-side.fixed {
 	position: fixed;
