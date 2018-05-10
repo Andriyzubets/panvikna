@@ -1288,9 +1288,9 @@ a {
 	background-size: cover;
 	padding-top: 100px; 
 	position: relative;
-	-webkit-transition: background-position .1s linear;
-	-o-transition: background-position .1s linear;
-	transition: background-position .1s linear;
+	-webkit-transition: background-position 0s linear;
+	-o-transition: background-position 0s linear;
+	transition: background-position 0s linear;
 }
 .index-gallery .wrap {
 	max-width: 1165px;
