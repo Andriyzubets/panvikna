@@ -3007,7 +3007,7 @@ a {
 	border: 1px solid #fff;
 	color: #fff;
 }
-.left-side .button:hover {
+.left-side .button:hover, .left-side .button.active {
 	-webkit-transform: translateX(5px);
 	-ms-transform: translateX(5px);
 	transform: translateX(5px);
