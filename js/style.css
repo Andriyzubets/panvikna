@@ -4096,6 +4096,19 @@ main {
 		-ms-flex-pack: center;
 		justify-content: center;
 	}
+	.footer .links ul {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.footer .wrap {
+		display: flex;
+		flex-direction: column;
+	}
 	.footer .copy .copies, .footer .copy .title {
 		margin-bottom: 30px;
 	}
