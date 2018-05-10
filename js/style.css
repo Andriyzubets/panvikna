@@ -1106,9 +1106,9 @@ a {
 	z-index: 0;
 }
 .benefits .right {
-	-webkit-transition: 0.01s;
-	-o-transition: 0.01s;
-	transition: 0.01s;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
 	-webkit-transform: translateY(22%);
 	-ms-transform: translateY(22%);
 	transform: translateY(22%);
