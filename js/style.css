@@ -4084,6 +4084,9 @@ main {
 	.about-page .about-description .double {
 		column-count: 1;
 	}
+	.complex-blog .item {
+		width: 100%;
+	}
 	.index-gallery .left-but {
 		right: 6%;
 	}
