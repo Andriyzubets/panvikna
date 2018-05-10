@@ -4081,6 +4081,9 @@ main {
 	.index-news .wrap .items {
 		margin-left: 0;
 	}
+	.about-page .about-description .double {
+		column-count: 1;
+	}
 	.index-gallery .left-but {
 		right: 6%;
 	}
