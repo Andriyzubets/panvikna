@@ -533,7 +533,11 @@ a {
 	padding: 105px 0 150px;
 	background: url(../img/inspiration-window.png) 95% 0% no-repeat;
 	background-size: 32.3%;
+	-webkit-transition: opacity .6s, background-position 0s ease-in-out, -webkit-transform .6s;
+	transition: opacity .6s, background-position 0s ease-in-out, -webkit-transform .6s;
+	-o-transition: opacity .6s, transform .6s, background-position 0s ease-in-out;
 	transition: opacity .6s, transform .6s, background-position 0s ease-in-out;
+	transition: opacity .6s, transform .6s, background-position 0s ease-in-out, -webkit-transform .6s;
 
 }
 .inspiration .wrap {
@@ -1024,7 +1028,11 @@ a {
 	-webkit-background-size: contain;
 	background-size: contain;
 	width: 56%;
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
 	transition: 0.1s;
+	-webkit-transform: translateY(20%);
+	-ms-transform: translateY(20%);
 	transform: translateY(20%);
 }
 .skills .wrap {
@@ -1097,7 +1105,11 @@ a {
 	z-index: 0;
 }
 .benefits .right {
+	-webkit-transition: 0.1s;
+	-o-transition: 0.1s;
 	transition: 0.1s;
+	-webkit-transform: translateY(22%);
+	-ms-transform: translateY(22%);
 	transform: translateY(22%);
 }
 .benefits .left {
@@ -1275,6 +1287,8 @@ a {
 	background-size: cover;
 	padding-top: 100px; 
 	position: relative;
+	-webkit-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
 	transition: background-position .1s linear;
 }
 .index-gallery .wrap {
@@ -1966,8 +1980,10 @@ a {
 	margin: 65px auto 125px;
 }
 .prod-gallery .double {
+	-moz-column-count: 2;
 	column-count: 2;
 	-webkit-column-count: 2;
+	-moz-column-gap: 1;
 	column-gap: 1;
 	-webkit-column-gap: 1;
 }
@@ -1979,6 +1995,7 @@ a {
 }
 .prod-gallery .double .img {
 	cursor: pointer;
+	page-break-inside: avoid;
 	break-inside: avoid;
 	-webkit-column-break-inside: avoid;
 }
@@ -2508,8 +2525,10 @@ a {
 		align-items: flex-start;
 		}*/
 		.product-item .portfolio-gallery .wrap .items {
+			-moz-column-count: 3;
 			column-count: 3;
 			-webkit-column-count: 3;
+			-moz-column-gap: 1;
 			column-gap: 1;
 			-webkit-column-gap: 1;
 		}
@@ -2520,6 +2539,7 @@ a {
 			-o-transition: all .4s ease-in-out;
 			transition: all .4s ease-in-out;
 			margin-bottom: 15px;
+			page-break-inside: avoid;
 			break-inside: avoid;
 			-webkit-column-break-inside: avoid;
 			width: 100%;
@@ -2757,6 +2777,8 @@ a {
 	margin-bottom: 35px;
 }
 .about-page .about-description .double {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
 	column-count: 2;
 }
 .about-page .about-description .double p {
@@ -3510,12 +3532,17 @@ main {
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 @media screen and (max-width: 1500px) {
@@ -3982,6 +4009,7 @@ main {
 		display: none;
 	}
 	.product-item .portfolio-gallery .wrap .items {
+		-moz-column-count: 1;
 		column-count: 1;
 		-webkit-column-count: 1;
 	}
