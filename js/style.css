@@ -4075,6 +4075,12 @@ main {
 		height: 90%;
 		margin-right: 30px;
 	}
+	.index-news .wrap .items:before {
+		display: none;
+	}
+	.index-news .wrap .items {
+		margin-left: 0;
+	}
 	.index-gallery .left-but {
 		right: 6%;
 	}
