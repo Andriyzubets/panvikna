@@ -4068,11 +4068,12 @@ main {
 		display: none;
 	}
 	.index-gallery .gallery-inner .gallery-line {
-		width: 1000%;
+		width: 1150%;
 	}
 	.index-gallery .gallery-inner .gallery-line .item {
-		width: 10%;
+		width: 9%;
 		height: 90%;
+		margin-right: 30px;
 	}
 	.index-gallery .left-but {
 		right: 6%;
@@ -4119,6 +4120,9 @@ main {
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 		align-items: center;
+	}
+	.manufacture .wrap {
+		margin-top: 150px;
 	}
 	.header .middle-header .call {
 		padding: 0;
