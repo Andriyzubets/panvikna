@@ -4198,54 +4198,52 @@ main {
 		transform: translate(-50%,-30px);
 		left: 50%;
 	}
-	/*.product-item .portfolio-gallery .wrap .items {
-		grid-auto-flow: row;
-		grid-template-rows: auto;
-		grid-template-columns: auto;
+	.about-page .about-title h1 {
+		word-wrap: break-word;
 	}
-	.product-item .portfolio-gallery .wrap .items a {
-		grid-column: auto !important;
-		grid-row: auto !important;
-		}*/
-		.about-page .about-title h1 {
-			word-wrap: break-word;
-		}
-		.about-page .about-description .double {
-			-webkit-flex-direction: column;
-			-moz-flex-direction: column;
-			-ms-flex-direction: column;
-			-o-flex-direction: column;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			flex-direction: column;
-		}
-		.about-page .about-description .double p {
-			width: 100%;
-		}
-		.about-page .about-second .double {
-			-webkit-flex-direction: column-reverse;
-			-moz-flex-direction: column-reverse;
-			-ms-flex-direction: column-reverse;
-			-o-flex-direction: column-reverse;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: reverse;
-			flex-direction: column-reverse;
-		}
-		.about-page .about-second .double .left {
-			width: 100%;
-		}
-		.about-page .about-second .double .right {
-			width: 80%;
-			padding-top: 50%;
-			margin: 0 auto 30px;
-		}
-		.about-page .about-third .triple {
-			-webkit-flex-direction: column;
-			-moz-flex-direction: column;
-			-ms-flex-direction: column;
-			-o-flex-direction: column;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			flex-direction: column;
-		}
+	.about-page .about-description .double {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
 	}
+	.about-page .about-description .double p {
+		width: 100%;
+	}
+	.about-page .about-second .double {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		flex-direction: column-reverse;
+	}
+	.about-page .about-second .double .left {
+		width: 100%;
+	}
+	.about-page .about-second .double .right {
+		width: 80%;
+		padding-top: 50%;
+		margin: 0 auto 30px;
+	}
+	.about-page .about-third .triple {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
+	}
+	.header .upper-header a:hover:after,.header .smart-menu a:hover:before, .header .middle-header .call:hover:before, .header .middle-header .call:hover:after, .inspiration .wrap .right .item:hover, .inspiration .wrap .right .but:hover, .doors .items .item:hover:before, .doors .items .item:hover:after, .doors .right .but:hover, .spring-prices .left .but:hover, .benefits .right .but:hover, .manufacture .but:hover,  .index-gallery .gallery-inner .gallery-line .item:hover, .index-gallery .gallery-inner .gallery-line .item:hover .but, .index-news .wrap .items .item:hover, .footer .main .categories a:hover:after, .footer .main .info a:hover:after, .footer .links a:hover:after, .item-desc .double ul li.active:after, .item-desc .double ul li:hover:after, .prod-more-items .items .item:hover .but, .product-item .portfolio-gallery .wrap .items a:hover, .left-side .button:hover,  .info-box .button:hover  {
+		width: 0;
+		height: 0;
+		opacity: 1;
+		transform: none;
+		box-shadow: none;
+	}
+}
