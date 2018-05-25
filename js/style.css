@@ -242,7 +242,7 @@ a {
 	width: 150px;
 	height: 48px;
 	display: block;
-	background: url(../img/window-logo.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/window-logo.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 	margin: 0 23px 0 0;
@@ -255,7 +255,7 @@ a {
 	width: 50px;
 	height: 30px;
 	display: block;
-	background: url(../img/rulet-header.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/rulet-header.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 	margin: 0 10px 0 0;
@@ -441,27 +441,27 @@ a {
 	height: 100%;
 }
 .header .bottom-header .menu1 .img {
-	background: url(../img/header-menu-1.png) 50% 30% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/header-menu-1.png) 50% 30% no-repeat;
 	background-size: contain;
 }
 .header .bottom-header .menu2 .img {
-	background: url(../img/header-menu-2.png) 50% 30% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/header-menu-2.png) 50% 30% no-repeat;
 	background-size: contain;
 }
 .header .bottom-header .menu3 .img {
-	background: url(../img/header-menu-3.png) 50% 30% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/header-menu-3.png) 50% 30% no-repeat;
 	background-size: contain;
 }
 .header .bottom-header .menu4 .img {
-	background: url(../img/header-menu-4.png) 50% 30% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/header-menu-4.png) 50% 30% no-repeat;
 	background-size: contain;
 }
 .header .bottom-header .menu5 .img {
-	background: url(../img/header-menu-5.png) 50% 30% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/header-menu-5.png) 50% 30% no-repeat;
 	background-size: contain;
 }
 .header .bottom-header .menu6  .img {
-	background: url(../img/header-menu-6.png) 50% 30% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/header-menu-6.png) 50% 30% no-repeat;
 	background-size: contain;
 }
 .header .bottom-header .active, .header .bottom-header li:hover {
@@ -495,7 +495,7 @@ a {
 	left: 0;
 	top: 0;
 	padding: 110px 100px;
-	background: #1a1a1a url(../img/video-main-lay.png) 50% no-repeat;
+	background: #1a1a1a url(https://panvikna.com/wp-content/themes/pan/img/video-main-lay.png) 50% no-repeat;
 	background-size: cover;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -513,7 +513,7 @@ a {
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
 	align-self: center;
-	background: url(../img/play-but.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/play-but.png) 50% no-repeat;
 	background-size: contain;
 	width: 52px;
 	height: 90px;
@@ -535,7 +535,7 @@ a {
 }
 .inspiration {
 	padding: 105px 0 150px;
-	background: url(../img/inspiration-window.png) 95% 0% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/inspiration-window.png) 95% 0% no-repeat;
 	background-size: 32.3%;
 	-webkit-transition: opacity .6s, background-position 0s ease-in-out, -webkit-transform .6s;
 	transition: opacity .6s, background-position 0s ease-in-out, -webkit-transform .6s;
@@ -692,27 +692,27 @@ a {
 	transform: scale(1.01);
 }
 .inspiration .wrap .right .item1 {
-	background: #f7f6f6 url(../img/window-item.png) 50% no-repeat;
+	background: #f7f6f6 url(https://panvikna.com/wp-content/themes/pan/img/window-item.png) 50% no-repeat;
 	background-size: 58%;
 }
 .inspiration .wrap .right .item2 {
-	background: #f7f6f6 url(../img/window-item.png) 50% no-repeat;
+	background: #f7f6f6 url(https://panvikna.com/wp-content/themes/pan/img/window-item.png) 50% no-repeat;
 	background-size: 58%;
 }
 .inspiration .wrap .right .item3 {
-	background: #f7f6f6 url(../img/window-item.png) 50% no-repeat;
+	background: #f7f6f6 url(https://panvikna.com/wp-content/themes/pan/img/window-item.png) 50% no-repeat;
 	background-size: 58%;
 }
 .inspiration .wrap .right .item4 {
-	background: #f7f6f6 url(../img/window-item.png) 50% no-repeat;
+	background: #f7f6f6 url(https://panvikna.com/wp-content/themes/pan/img/window-item.png) 50% no-repeat;
 	background-size: 58%;
 }
 .inspiration .wrap .right .item5 {
-	background: #f7f6f6 url(../img/window-item.png) 50% no-repeat;
+	background: #f7f6f6 url(https://panvikna.com/wp-content/themes/pan/img/window-item.png) 50% no-repeat;
 	background-size: 58%;
 }
 .inspiration .wrap .right .item6 {
-	background: #f7f6f6 url(../img/window-item.png) 50% no-repeat;
+	background: #f7f6f6 url(https://panvikna.com/wp-content/themes/pan/img/window-item.png) 50% no-repeat;
 	background-size: 58%;
 }
 .inspiration .wrap .right .but {
@@ -1047,7 +1047,7 @@ a {
 	right: 15px;
 }
 .spring-prices .right {
-	background: url(../img/promo-window.png) 0% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/promo-window.png) 0% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 	width: 56%;
@@ -1169,7 +1169,7 @@ a {
 .benefits .right .img {
 	width: 76%;
 	padding-top: 57%;
-	background: url(../img/development.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/development.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	margin: 35px 0 10px -18%;
@@ -1306,7 +1306,7 @@ a {
 }
 .index-gallery {
 	margin: 150px 0 270px;
-	background: #f7f7f7 url(../img/index-gallery-lay.png) no-repeat scroll right 0;
+	background: #f7f7f7 url(https://panvikna.com/wp-content/themes/pan/img/index-gallery-lay.png) no-repeat scroll right 0;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -1437,27 +1437,27 @@ a {
 }
 
 .index-gallery .gallery-inner .gallery-line .item1 {
-	background: url(../img/index-gal-1.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-gal-1.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .index-gallery .gallery-inner .gallery-line .item2 {
-	background: url(../img/index-gal-2.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-gal-2.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .index-gallery .gallery-inner .gallery-line .item3 {
-	background: url(../img/index-gal-3.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-gal-3.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .index-gallery .gallery-inner .gallery-line .item4 {
-	background: url(../img/index-gal-4.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-gal-4.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .index-gallery .gallery-inner .gallery-line .item5 {
-	background: url(../img/index-gal-5.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-gal-5.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -1560,22 +1560,22 @@ a {
 	filter: grayscale(0);
 }
 .index-news .wrap .items .item1 .img {
-	background: url(../img/index-news1.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-news1.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .index-news .wrap .items .item2 .img {
-	background: url(../img/index-news2.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-news2.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .index-news .wrap .items .item3 .img {
-	background: url(../img/index-news3.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-news3.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .index-news .wrap .items .item4 .img {
-	background: url(../img/index-news4.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/index-news4.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -1590,7 +1590,7 @@ a {
 .footer {
 	margin-top: 130px;
 	padding: 60px 0 30px;
-	background: #131313 url(../img/footer-lay.png) 50% no-repeat;
+	background: #131313 url(https://panvikna.com/wp-content/themes/pan/img/footer-lay.png) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	color: #dadada;
@@ -1652,7 +1652,7 @@ a {
 .footer .main .pan .logo .img {
 	width: 150px;
 	padding-top: 48px;
-	background: url(../img/window-logo.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/window-logo.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 	margin-right: 17px;
@@ -1761,27 +1761,27 @@ a {
 	opacity: .5;
 }
 .footer .links .fb, .repost .fb {
-	background: url(../img/facebook.svg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/facebook.svg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .footer .links .tw, .repost .tw  {
-	background: url(../img/twitter-4.svg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/twitter-4.svg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .footer .links .tg, .repost .tg  {
-	background: url(../img/telegram.svg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/telegram.svg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .footer .links .goo, .repost .goo  {
-	background: url(../img/google-plus.svg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/google-plus.svg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .footer .links .ig, .repost .ig  {
-	background: url(../img/instagram-icon.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/instagram-icon.png) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -1961,12 +1961,12 @@ a {
 	padding-top: 25px;
 }
 .footer .copy .made-by .design .img {
-	background: url(../img/why-not-logo.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/why-not-logo.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .footer .copy .made-by .frontend .img {
-	background: url(../img/vinit-logo.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/vinit-logo.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -1992,7 +1992,7 @@ a {
 ********* Card **************
 ***************************/
 .product-item {
-	background: url(../img/card-lay.jpg) 0%;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/card-lay.jpg) 0%;
 	background-size: 100%;
 }
 .main-item {
@@ -2048,7 +2048,7 @@ a {
 .main-item .content .img {
 	width: 27%;
 	padding-top: 34%;
-	background: url(../img/prod-item-img.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/prod-item-img.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -2211,7 +2211,7 @@ a {
 	-ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 	opacity: 0;
-	background: url(../img/zoom-icon.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/zoom-icon.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 	-webkit-transition: all .2s ease-in-out;
@@ -2226,7 +2226,7 @@ a {
 	padding-top: 66%;
 	display: block;
 	position: relative;
-	background: url(../img/prod-img1.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/prod-img1.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	margin-bottom: 6%;
@@ -2236,7 +2236,7 @@ a {
 	padding-top: 87%;
 	display: block;
 	position: relative;
-	background: url(../img/prod-img2.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/prod-img2.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -2245,7 +2245,7 @@ a {
 	padding-top: 82%;
 	display: block;
 	position: relative;
-	background: url(../img/prod-img3.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/prod-img3.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	margin-bottom: 6%;
@@ -2255,7 +2255,7 @@ a {
 	padding-top: 83%;
 	display: block;
 	position: relative;
-	background: url(../img/prod-img4.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/prod-img4.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -2368,32 +2368,32 @@ a {
 	display: inline-block;
 }
 .item-detailed .double .right .share .fb {
-	background: url(../img/fb.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/fb.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .item-detailed .double .right .share .fb:hover {
-	background: url(../img/fb-hover.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/fb-hover.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .item-detailed .double .right .share .tw {
-	background: url(../img/tw.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/tw.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .item-detailed .double .right .share .tw:hover {
-	background: url(../img/tw-hover.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/tw-hover.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .item-detailed .double .right .share .pin {
-	background: url(../img/pin.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/pin.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .item-detailed .double .right .share .pin:hover {
-	background: url(../img/pin-hover.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/pin-hover.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -2440,7 +2440,7 @@ a {
 	-webkit-transform: translate(0,-50%);
 	-ms-transform: translate(0,-50%);
 	transform: translate(0,-50%);
-	background: url(../img/left-arrow.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/left-arrow.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -2463,14 +2463,14 @@ a {
 	-webkit-transform: translate(0,-50%);
 	-ms-transform: translate(0,-50%);
 	transform: translate(0,-50%);
-	background: url(../img/right-arrow.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/right-arrow.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
 .prod-more-items .nav .middle {
 	width: 20px;
 	height: 20px;
-	background: url(../img/more-button.png);
+	background: url(https://panvikna.com/wp-content/themes/pan/img/more-button.png);
 	display: block;
 }
 .prod-more-items .items {
@@ -2519,7 +2519,7 @@ a {
 .prod-more-items .items .item .img {
 	display: block;
 	padding-top: 79%;
-	background: url(../img/prod-item-more.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/prod-item-more.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 	margin: 15px 0;
@@ -2629,10 +2629,10 @@ a {
 ***************************/
 .product-item .title-image {
 	padding: 150px 0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#00000058), to(#00000058)), url(../img/port-header.jpg) 50% no-repeat;
-	background: -webkit-linear-gradient(#00000058, #00000058), url(../img/port-header.jpg) 50% no-repeat;
-	background: -o-linear-gradient(#00000058, #00000058), url(../img/port-header.jpg) 50% no-repeat;
-	background: linear-gradient(#00000058, #00000058), url(../img/port-header.jpg) 50% no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00000058), to(#00000058)), url(https://panvikna.com/wp-content/themes/pan/img/port-header.jpg) 50% no-repeat;
+	background: -webkit-linear-gradient(#00000058, #00000058), url(https://panvikna.com/wp-content/themes/pan/img/port-header.jpg) 50% no-repeat;
+	background: -o-linear-gradient(#00000058, #00000058), url(https://panvikna.com/wp-content/themes/pan/img/port-header.jpg) 50% no-repeat;
+	background: linear-gradient(#00000058, #00000058), url(https://panvikna.com/wp-content/themes/pan/img/port-header.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	max-width: 100% !important;
@@ -2662,7 +2662,7 @@ a {
 	margin-left: .5em;
 }
 .product-item  .portfolio-gallery {
-	background: url(../img/portfolio-lay.jpeg) 100%;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/portfolio-lay.jpeg) 100%;
 	background-size: 100%;
 	max-width: 100% !important;
 }
@@ -2725,47 +2725,47 @@ a {
 }
 
 .product-item .portfolio-gallery .wrap .items a.item1 {
-	background: url(../img/port-img1.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img1.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .product-item .portfolio-gallery .wrap .items a.item2 {
-	background: url(../img/port-img2.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img2.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .product-item .portfolio-gallery .wrap .items a.item3 {
-	background: url(../img/port-img3.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img3.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .product-item .portfolio-gallery .wrap .items a.item4 {
-	background: url(../img/port-img4.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img4.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .product-item .portfolio-gallery .wrap .items a.item5 {
-	background: url(../img/port-img5.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img5.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .product-item .portfolio-gallery .wrap .items a.item6 {
-	background: url(../img/port-img6.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img6.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .product-item .portfolio-gallery .wrap .items a.item7 {
-	background: url(../img/port-img7.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img7.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .product-item .portfolio-gallery .wrap .items a.item8 {
-	background: url(../img/port-img8.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img8.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 .product-item .portfolio-gallery .wrap .items a.item9 {
-	background: url(../img/port-img9.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/port-img9.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -2786,7 +2786,7 @@ a {
 ***************************/
 .about-page .about-title {
 	padding: 130px 0 85px;
-	background: url(../img/about-title-lay.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/about-title-lay.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	max-width: 100% !important;
@@ -2841,7 +2841,7 @@ a {
 	max-width: 1160px;
 	width: calc(100% - 15px);
 	margin: 0 auto;
-	background: url(../img/about-stages-lay.png), #e8e8e8 url(../img/about-stages-window.png) 100% -400% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/about-stages-lay.png), #e8e8e8 url(https://panvikna.com/wp-content/themes/pan/img/about-stages-window.png) 100% -400% no-repeat;
 	padding: 90px 0 90px 15px;
 }
 .about-page .about-stages h3, .about-page .about-main-unyson h3 {
@@ -2898,7 +2898,7 @@ a {
 	position: absolute;
 	width: 131%;
 	height: 3em;
-	background: url(../img/about-block-2-text.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/about-block-2-text.png) 50% no-repeat;
 	background-size: contain;
 	left: -8%;
 	bottom: -.8em;
@@ -2927,7 +2927,7 @@ a {
 }
 .about-page .about-second .double .right {
 	width: 52.5%;
-	background: url(../img/about-block-2.jpg) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/about-block-2.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -2935,7 +2935,7 @@ a {
 	max-width: 1160px;
 	width: calc(100% - 15px);
 	margin: 0 auto;
-	background: #e8e8e8 url(../img/about-stages-window.png) 100% -400% no-repeat;
+	background: #e8e8e8 url(https://panvikna.com/wp-content/themes/pan/img/about-stages-window.png) 100% -400% no-repeat;
 	padding: 90px 0 90px 15px;
 	position: relative;
 	-webkit-box-shadow: 10px 10px 20px #ccc;
@@ -2947,7 +2947,7 @@ a {
 	position: absolute;
 	width: 81%;
 	padding-top: 16%;
-	background: url(../img/about-third-text.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/about-third-text.png) 50% no-repeat;
 	bottom: -30%;
 	right: 0;
 	-webkit-filter: drop-shadow(10px 10px 20px #ccc);
@@ -3180,7 +3180,7 @@ a {
 .info-box .img {
 	width: 28%;
 	padding-top: 36%;
-	background: url(../img/window-black.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/window-black.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 }
@@ -3232,7 +3232,7 @@ a {
 	max-width: 1240px;
 }
 .top-pic {
-	background: url(../img/top-bg.png) no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/top-bg.png) no-repeat;
 	background-size: cover;
 	height: 335px;
 	position: relative;
@@ -3325,7 +3325,7 @@ a {
 	align-items: flex-start;
 }
 .house-box .img {
-	background: url(../img/House.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/House.png) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 37%;
@@ -3452,13 +3452,13 @@ main {
 .mouse-scroll .mouse {
 	width: 20px;
 	height: 30px;
-	background: url(../img/mouse-icon.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/mouse-icon.png) 50% no-repeat;
 	background-size: contain;
 }
 .mouse-scroll .arrow {
 	width: 10px;
 	height: 75px;
-	background: url(../img/arrow-bottom.png) 50% no-repeat;
+	background: url(https://panvikna.com/wp-content/themes/pan/img/arrow-bottom.png) 50% no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 	margin-top: 20px;
@@ -4040,7 +4040,7 @@ main {
 		max-width: 50%;
 	}
 	.about-page .about-stages {
-		background: url(../img/about-stages-lay.png), #e8e8e8 url(../img/about-stages-window.png) 100% 100% no-repeat;
+		background: url(https://panvikna.com/wp-content/themes/pan/img/about-stages-lay.png), #e8e8e8 url(https://panvikna.com/wp-content/themes/pan/img/about-stages-window.png) 100% 100% no-repeat;
 	}
 	.about-page .about-stages .triple {
 		width: 100%;
@@ -4053,7 +4053,7 @@ main {
 		flex-direction: column;
 	}
 	.about-page .about-third {
-		background: #e8e8e8 url(../img/about-stages-window.png) 100% 100% no-repeat;
+		background: #e8e8e8 url(https://panvikna.com/wp-content/themes/pan/img/about-stages-window.png) 100% 100% no-repeat;
 	}
 	.about-page .about-third .triple {
 		width: 100%;
