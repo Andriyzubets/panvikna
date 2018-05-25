@@ -8,19 +8,19 @@
 }
 @font-face {
 	font-family: RobotoMedium;
-	src: url('../fonts/RobotoMono-Regular.woff2') format('woff2');
+	src: url('https://panvikna.com/wp-content/themes/pan/fonts/RobotoMono-Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family: RobotoMedium;
-	src: url('../fonts/RobotoMono-Medium.ttf') format('woff2');
+	src: url('https://panvikna.com/wp-content/themes/pan/fonts/RobotoMono-Medium.ttf') format('woff2');
 }
 @font-face {
 	font-family: RobotoLight;
-	src: url('../fonts/RobotoMono-Light.woff2') format('woff2');
+	src: url('https://panvikna.com/wp-content/themes/pan/fonts/RobotoMono-Light.woff2') format('woff2');
 }
 @font-face {
 	font-family: RobotoBlack;
-	src: url('../fonts/RobotoMono-Bold.woff2') format('woff2');
+	src: url('https://panvikna.com/wp-content/themes/pan/fonts/RobotoMono-Bold.woff2') format('woff2');
 }
 a {
 	text-decoration: none;
